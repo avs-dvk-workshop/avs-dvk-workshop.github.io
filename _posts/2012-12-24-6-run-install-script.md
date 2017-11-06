@@ -8,21 +8,24 @@ layout: nil
 {:.steps}
 ### Run the Install Script
 
-You are now ready to run the install script. This will install all dependencies, including the  wake word engine from Sensory.
+You are now ready to run the install script. This will install all dependencies, pull down the AVS SDK code base, and install the driver for the Intel Speech Enabling Developer Kit. 
 
-To run the script,  open a **terminal** by clicking on the console window in the Pi's toolbar at the upper left of the screen. There should be two scripts in your *home/pi/avs-sdk* directory: **config.sh** that you just populated, and **setup.sh** which uses the data from your config file to run the install script. Copy and paste the following command into your terminal window, and hit return to run the following:
+To run the script, open a **terminal** window by clicking on the console window in the Pi's toolbar at the upper left of the screen. There should be one script in your `/home/pi/` directory named `install_avs_sdk.sh`. Copy and paste the following commands into your terminal window, and hit return to run the following:
 
+```sh
+cd ~
+bash ./install_avs_sdk.sh
+```
 
-`cd home/pi/avs-sdk
-bash setup.sh config.sh
-`
-Note if you have made an error in filling out the **config.sh** file with your account-specific information, the script will error out and inform you which field needs to be fixed.  In this event, return to your **security profile** on your Developer page and double-check your copy and paste into **config.sh** was correct.
+First, this script will install the required dependencies on your system. Then, it will download the SDK code base and the Intel Speech Enabling Developer Kit driver. After these download complete, the script will proceed to install the driver and build the SDK.
 
-Once the script is running, you'll be prompted to accept the Sensory agreement during installation.  Hit the return key to scroll through the terms and conditions until prompted for a yes/no.  Type "y" and hit return to continue. Otherwise all steps are covered in the script execution for setup.
+Once the script is finished compiling the SDK, you will be prompted for the product ID, Client ID, and Client secret which you should have obtained when creating your **security profile** in a prior section.
 
-You can use the text editor to view the contents of the **setup.sh** file. It's a relatively simple script designed to run on a clean install of the Raspbian **stretch** OS.
+Note if you have made an error while providing the information to the `install_avs_sdk.sh` script, the script will error out and inform you which field needs to be fixed. In this event, return to your **security profile** on your Developer page and double-check your copy and paste values given to the `install_avs_sdk.sh` script.
 
-**Note** for the purposes of this workshop, portions of the script have been pre-built to get your client up and running faster.  If you use this script for an install on a clean OS image, expect it to take around 20 minutes to build.
+Once you have entered in all of the requested account-specific information, the browser on the Raspberry Pi will be opened to `https://localhost:3000`, and you will be prompted to log into the Amazon Developer console to generate the refresh token. Proceed as instructed on the website. After completing this step, the `install_avs_sdk.sh` script will automcatically exit.
+
+> **Note** for the purposes of this workshop, portions of the script have been pre-built to get your client up and running faster.  If you use this script for an install on a clean OS image, expect it to take around 20 minutes to build.
 
 
 {:.verify}
