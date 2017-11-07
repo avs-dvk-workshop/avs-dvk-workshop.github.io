@@ -14,9 +14,9 @@ layout: nil
 4. [Optional] You may upload an image as well. The image will be shown on the Login with Amazon consent page to give your users context.
 5. Click Save.
 
-	 ![](../assets/avs-privacy-url.png)
+	 ![](assets/avs-privacy-url.png)
 
 {:.verify}
 ### Checkpoint 4
 
-1. Ensure that your security profile appears under **Login with Amazon Configurations** at [https://developer.amazon.com/lwa/sp/overview.html](https://developer.amazon.com/lwa/sp/overview.html).
+1. Ensure that your security profile appears under **Login with Amazon Configurations**.
