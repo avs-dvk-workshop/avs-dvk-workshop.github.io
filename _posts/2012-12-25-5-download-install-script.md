@@ -12,7 +12,7 @@ layout: nil
 
 To download the install script, do the following steps on your Raspberry Pi:
 
-1. Go to [this]() link in your browser on the Raspberry Pi
+1. Go to [this](https://raw.githubusercontent.com/intel-iot-devkit/avs-device-sdk-intel-speech-enabling-kit/master/install_avs_sdk.sh) link in your browser on nthe Raspberry Pi
 2. Right click anywhere on on the browser and select, "Save As"
 3. Save the script to the your home directory, i.e. `/home/pi`
 

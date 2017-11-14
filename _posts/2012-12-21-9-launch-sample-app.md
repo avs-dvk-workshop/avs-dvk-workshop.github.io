@@ -7,7 +7,7 @@ layout: nil
 {:.steps}
 ### Launch the Client
 
-The sample application is in the folder `/home/pi/sdk-folder/sdk-build/SampleApp/src`. You should see a shell script to start it called `startsample.sh` in the `/home/pi/sdk-folder` directory. To see how it is being started, you can use your Terminal to navigate to this directory and use `cat` to view the contents :
+The sample application is in the folder `/home/pi/sdk-folder/sdk-build/SampleApp/src`. You should see a shell script to start it called `startsample.sh` in the `/home/pi/sdk-folder` directory. To see how it is being started, you can use your Terminal to navigate to this directory and use `cat` to view the contents:
 
 ```sh
 cd /home/pi/sdk-folder/
