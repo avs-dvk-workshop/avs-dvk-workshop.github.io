@@ -8,7 +8,7 @@ layout: nil
 {:.steps}
 ### Download the Install Script
 
-> **Note** For the purposes of this workshop, this step has already been completed for you, in order to get your client up and running faster. If you setting up a Raspberry Pi from scratch, you will need to complete this process, which should only take a few minutes...
+> **NOTE:** For the purposes of this workshop, this step has already been completed for you, in order to get your client up and running faster. If you setting up a Raspberry Pi from scratch, you will need to complete this process, which should only take a few minutes...
 
 To download the install script, do the following steps on your Raspberry Pi:
 
