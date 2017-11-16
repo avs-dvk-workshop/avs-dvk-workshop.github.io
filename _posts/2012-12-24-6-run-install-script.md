@@ -10,11 +10,15 @@ layout: nil
 
 You are now ready to run the install script. This will install all dependencies, pull down the AVS SDK code base, and install the driver for the Intel Speech Enabling Developer Kit. 
 
-To run the script, open a **terminal** window by clicking on the console window in the Pi's toolbar at the upper left of the screen. There should be one script in your `/home/pi/` directory named `install_avs_sdk.sh`. Copy and paste the following commands into your terminal window, and hit return to run the following:
+To run the script, open a **terminal** window by clicking on the console window 
+in the Pi's toolbar at the upper left of the screen. There should be one script 
+in your `/home/pi/` directory named `install_avs_sdk.sh`. Copy and paste the 
+following commands into your terminal window, and hit return to run the following:  
 
-`cd ~
+```sh
+cd ~
 sudo bash ./install_avs_sdk.sh
-`
+```
 
 First, you will be prompted for the product ID, Client ID, and Client secret which you should have obtained when creating your **security profile** in a prior section. Next, this script will install the required dependencies on your system. Then, it will download the SDK code base and the Intel Speech Enabling Developer Kit driver. After these downloads complete, the script will proceed to install the driver and build the SDK.
 
