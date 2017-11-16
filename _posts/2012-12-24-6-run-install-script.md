@@ -14,7 +14,7 @@ Enabling Developer Kit.
 
 To run the script, open a **terminal** window by clicking on the console window 
 in the Pi's toolbar at the upper left of the screen. There should be one script 
-in your **/home/pi/** directory named **install_avs_sdk.sh**. Copy and paste the 
+in your */home/pi/* directory named **install_avs_sdk.sh**. Copy and paste the 
 following commands into your terminal window, and hit return to run the following:  
 
 `cd ~
@@ -38,7 +38,7 @@ Once all of the dependency, driver, and SDK installation has completed, the
 browser on the Raspberry Pi will be opened to **https://localhost:3000**, and 
 you will be prompted to log into the Amazon Developer console to generate the 
 refresh token. Proceed as instructed on the website. After completing this step, 
-the <code>install_avs_sdk.sh</code> script will automcatically exit.
+the **install_avs_sdk.sh** script will automcatically exit.
 
 > **NOTE:** For the purposes of this workshop, portions of the script have been 
 > pre-built to get your client up and running faster. If you use this script 
