@@ -1,27 +1,28 @@
 ---
-title: '1. Setup Your Pi'
+title: '1. Setup Your Pi and Intel Speech Enabling Developer Kit'
 
 
 layout: nil
 ---
-**Note:  you can skip this step if your Pi is already up and running.**
 
 Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
 
 - 4 USB ports
 - HDMI port for video output (you'll be using this to connect to your HDMI monitor)
-- 3.5mm audio jack for sound output (you'll be using to connect your earphones)
+- 3.5mm audio jack for sound output (you won't use this for this lab - you'll connect to the intel DSP)
 - Micro SD card slot
 - Ethernet port
 
 {:.steps}
 ### Assembling Your Pi
 
-1. Check that your micro SD card is inserted into the micro SD card slot on your Pi.
-2. Plug in the USB microphone and 3.5mm earbuds.
-4. Connect the keyboard and mouse to the USB ports.
-5. Connect your monitor using the HDMI port.
-6. Connect the Ethernet Cable.
+1. Check that your micro SD card is inserted into the micro SD card slot on your Pi.  Note the contacts should face UP.
+2. Connect the keyboard and mouse to the USB ports.
+3. Connect your monitor using the HDMI port.
+4. Connect the Ethernet Cable.
+
+{:.steps}
+### Assembling Your Intel Speech Enabling Developer Kit
 
 {:.steps}
 ### Booting Your Pi
