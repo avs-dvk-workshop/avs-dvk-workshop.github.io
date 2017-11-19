@@ -24,28 +24,28 @@ Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
 {:.steps}
 ### Assembling Your Intel Speech Enabling Developer Kit
 
-Your Intel kit includes a mic array board to capture audio, a Digital Signal Processor (DSP) board to implement audio processing algorithms, and an interconnect FPC to interface your DSP board to the Raspberry Pi.  Verify that you have all the required parts.
-![contents](/assets/contents.png)
+Your Intel kit includes a mic array board to capture audio, a Digital Signal Processor (DSP) board to implement audio processing algorithms, and an interconnect FPC to interface your DSP board to the Raspberry Pi.  Verify that you have all the required parts before you start the assembly process.
+![contents](/assets/Contents.png)
 
-1. Begin by attaching your Mic Array board to the DSP board.  You should see two sets of headers on the Mic Array board that match up to the top side of the DSP board.  Align them carefully before applying even pressure to fully mate the headers together.
+Begin by attaching your Mic Array board to the DSP board.  You should see two sets of headers on the Mic Array board that match up to the top side of the DSP board.  Align them carefully before applying even pressure to fully mate the headers together.
 
 ![Connect Mic PCB to DSP PCB](/assets/FlipConnect.png)
 
 ![Connect Detail](/assets/AlignPress.png)
 
-2. Next, you'll attach the FPC to the DSP board.  Flip your boards so that the DSP board's bottom side is accessible, and plug in the smaller of the two connectors from the FPC.  Ensure that you've aligned all the pins correctly before applying even pressure to fully mate the FPC to the DSP board.
+Next, you'll attach the FPC to the DSP board.  Flip your boards so that the DSP board's bottom side is accessible, and plug in the smaller of the two connectors from the FPC.  Ensure that you've aligned all the pins correctly before applying even pressure to fully mate the FPC to the DSP board.
 
 ![FPC to DSP](/assets/ConnectorPress.png)
 
-3. Now you'll need to attach the other side of the FPC (With the larger connector) to your Raspberry Pi.  Flip the DSP board back over so that the FPC is coming out of the bottom of the assembly.  Line it up with the Raspberry Pi's header as shown.  Align them carefully and press the connector down until it is fully mated with the Raspberry Pi.
+Now you'll need to attach the other side of the FPC (With the larger connector) to your Raspberry Pi.  Flip the DSP board back over so that the FPC is coming out of the bottom of the assembly.  Line it up with the Raspberry Pi's header as shown.  Align them carefully and press the connector down until it is fully mated with the Raspberry Pi.
 
 ![Pi to FPC](/assets/PiConnect.png)
 
-4. Install your speaker or earbuds into the DSP board's 3.5mm audio connector as shown - do not use the audio jack on the Raspberry Pi.  Next, you'll need to plug in power to the USB micro connector on the DSP board.  You should see a blue LED illuminate on the bottom of the DSP board indicating power is on.  Ensure your speaker is turned on - you may need to charge the battery if it isn't turning on.  You can plug in any USB Micro into the speaker's connector to charge the battery on the speaker.
+Install your speaker or earbuds into the DSP board's 3.5mm audio connector as shown - do not use the audio jack on the Raspberry Pi.  Next, you'll need to plug in power to the USB micro connector on the DSP board.  You should see a blue LED illuminate on the bottom of the DSP board indicating power is on.  Ensure your speaker is turned on - you may need to charge the battery if it isn't turning on.  You can plug in any USB Micro into the speaker's connector to charge the battery on the speaker.
 
-![Audio and Power](/assets/AudioPowerInstall.png)
+![Audio and Power](/assets/AudioPowerInstallDSP.png)
 
-5. Check the configuration of your kit against the picture as shown to ensure all connections are ready to go.  When you power up your Pi, you should see the ring of white LEDs illuminate on the Intel kit's Mic Array board.  Not shown in this picture is the ethernet connection.
+Check the configuration of your kit against the picture as shown to ensure all connections are ready to go.  When you power up your Pi, you should see the ring of white LEDs illuminate on the Intel kit's Mic Array board.  Not shown in this picture is the ethernet connection.
 
 ![SetupFinished](/assets/SetupFinished.png)
 
