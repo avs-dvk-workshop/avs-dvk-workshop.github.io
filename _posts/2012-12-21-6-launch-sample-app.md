@@ -17,11 +17,14 @@ You can see that it is starting with the highest debug level, **DEBUG9**. This w
 
 ## Terminal Window
 
-1. From a terminal window, run `startsample.sh`.
+1. From a terminal window, run **startsample.sh** by pasting the following command into a terminal window:
+
 `cd /home/pi/sdk-folder
 sudo bash startsample.sh
 `
-2. You should see a connecting message, followed with a splash screen indicating your App has started successfully.  
+
+2. You should see a connecting message, followed with a splash screen indicating your App has started successfully.
+
 ![](assets/SampleApp.png)
 
 {:.verify}
