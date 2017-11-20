@@ -17,8 +17,10 @@ To start the setup and install script, do the following steps on your Raspberry 
 ![](assets/InstallScript.png)
 3. Check the confirmation printout of your credentials and hit "y" to continue.
 4. A browser window will open to request a refresh token for your device - this is what allows your unique device to access the AVS in the cloud.  Input your credentials and log in - you should automatically generate the refresh token.  You can close the browser window after this step.
+![](assets/TokenSuccess.png)
 
 {:.verify}
 ### Checkpoint 5
 
 1. Navigate to */home/pi/sdk-folder/sdk-build/Integration* and right click on the **AlexaClientSDKConfig.json** file.  Open it with a text editor to view the contents.  You should see your developer credentials listed under the `authdelegate` section.  Ensure that the **"refreshToken"** field is populated - it should be a very long string of characters.
+![](assets/JSONcheck.png)
