@@ -14,7 +14,4 @@ layout: nil
 * [Alexa Blog](https://developer.amazon.com/public/community/blog/tag/Alexa)  
 * [Forum and Knowledge Base](https://forums.developer.amazon.com/spaces/38/index.html)  
 
-### Wake Word Engines
 
-* [Sensory](https://github.com/Sensory/alexa-rpi)
-* [KITT.AI](https://github.com/Kitt-AI/snowboy)
