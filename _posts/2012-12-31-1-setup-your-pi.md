@@ -57,6 +57,21 @@ Check the configuration of your kit against the picture as shown to ensure all c
 1. Plug in the power supply to the micro USB connector on the Pi.
 2. Open a web browser by clicking on the globe icon in the top left toolbar.
 
+{:.steps}
+### Change Keyboard Layout (Optional)
+The Raspberry Pi, by default, has the keyboard layout set to the United Kingdom. 
+If you wish to change this, open a Terminal window and run the following command:
+
+`raspi-config`
+
+You will be presented with a menu in your terminal window. Do the following to 
+change the keyboard layout:
+
+1. Select Internationalization
+2. Select Keyboard Setup
+3. Choose your preferred layout
+4. Choose your preferred language, e.g. *English (US)* for American English
+
 {:.verify}
 ### Checkpoint 1
 1. Make sure you're connected to the internet and are able to navigate to [https://developer.amazon.com](https://developer.amazon.com).
