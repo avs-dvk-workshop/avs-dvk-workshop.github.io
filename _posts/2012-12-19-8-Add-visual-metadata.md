@@ -1,5 +1,5 @@
 ---
-title: '13. Add Visual Meta-data using Display Cards'
+title: '8. Add Visual Meta-data using Display Cards'
 
 
 layout: nil
@@ -13,7 +13,7 @@ Navigate back to your developer portal at [developer.amazon.com](https://develop
 
 ![DisplayCards](assets/DisplayCards.png)
 
-Now, restart your Sample App and ask "Alexa, play NPR on TuneIn".  Scroll through the logs and you should see a **RenderPlayerInfoCard** - this is the visual metadata delivered along with your response from Alexa.  Copy the URL into a browser window and you'll see the image that would be displayed if your device has a screen with graphics capability.
+Now, restart your Sample App and ask **"Alexa, play NPR on TuneIn"**.  Scroll up through the logs and you should see a **RenderPlayerInfoCard** - this is the visual metadata delivered along with your response from Alexa.  Copy the URL into a browser window and you'll see the image that would be displayed if your device has a screen with graphics capability.
 
 ![DisplayCards](assets/DisplayCards_NPR.png)
 
