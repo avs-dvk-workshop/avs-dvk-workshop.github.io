@@ -10,7 +10,7 @@ layout: nil
 
 After you've registered for an Amazon developer account, you'll need to create an Alexa device and security profile. This will enable your client to connect to the Alexa Voice Service in the cloud.
 
-1. Login to Amazon Developer Portal - [developer.amazon.com](https://developer.amazon.com/login.html)
+1. Login to Amazon Developer Portal at [developer.amazon.com](https://developer.amazon.com/login.html).  Click on "Developer Console" in the upper right corner.
 2. Click on Alexa tab, and then click on Get Started button under Alexa Voice Service.
    ![](assets/avs-navigation-new.png)
 3. If this is your first time using AVS, then you will get a welcome screen. Click on the **GET STARTED** button. If you have already used AVS before, then instead click the **Create Product** button.
