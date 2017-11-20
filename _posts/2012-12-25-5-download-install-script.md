@@ -1,5 +1,5 @@
 ---
-title: '5. Download the Install Script'
+title: '5. Run the Setup and Install Script'
 
 
 layout: nil
@@ -8,15 +8,16 @@ layout: nil
 {:.steps}
 ### Download the Install Script
 
-> **NOTE:** For the purposes of this workshop, this step has already been completed for you, in order to get your client up and running faster. If you setting up a Raspberry Pi from scratch, you will need to complete this process, which should only take a few minutes.
+> **NOTE:** For the purposes of this workshop, the install has been pre-built to save time.  
 
-To download the install script, do the following steps on your Raspberry Pi:
+To start the setup and install script, do the following steps on your Raspberry Pi:
 
-1. Go to [this](https://raw.githubusercontent.com/intel-iot-devkit/avs-device-sdk-intel-speech-enabling-kit/master/install_avs_sdk.sh) link in your browser on nthe Raspberry Pi
-2. Right click anywhere on on the browser and select, "Save As"
-3. Save the script to the your home directory, i.e. `/home/pi`
+1. Open a terminal window by clicking on the black console icon on the toolbar, located at the top-right corner of your Pi's desktop.
+2. You'll need to start the installation script to input your developer credentials.  In the terminal window, type: `sudo bash install_avs_sdk.sh`.  You'll be prompted for your **ProductID** (no spaces), **ClientID**, and **Client Secret**.  Copy and paste these from your developer page, making sure you don't miss any characters or add any spaces.
+3. Check the confirmation printout of your credentials and hit "y" to continue.
+4. A browser window will open to request a refresh token for your device - this is what allows your unique device to access the AVS in the cloud.  Input your credentials and log in - you should automatically generate the refresh token.  You can close the browser window after this step.
 
 {:.verify}
 ### Checkpoint 5
 
-1. The install script is located at `/home/pi` on your Raspberry Pi
+1. Navigate to */home/pi/sdk-folder/sdk-build/Integration* and right click on the **AlexaClientSDKConfig.json** file.  Open it with a text editor to view the contents.  You should see your developer credentials listed under the `authdelegate` section.  Ensure that the **"refreshToken"** field is populated - it should be a very long string of characters.
