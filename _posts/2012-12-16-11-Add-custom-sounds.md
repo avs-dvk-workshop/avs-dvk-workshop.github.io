@@ -39,8 +39,8 @@ bash startsample.sh
 {:.verify}
 ### Checkpoint 11
 
-Every time you speak the wake word "Alexa" to your prototype (Alexa's state changes to "Listening...") you should hear your custom sound play, indicating that Alexa has opened a channel to the cloud and is ready for your request.  The */home/pi/CustomSounds* folder has several different .wav files - experiment with different sounds at various states in the UI manager!
+Every time you speak the wake word "Alexa" to your prototype (Alexa's state changes to "Listening...") you should hear your custom sound play, indicating that Alexa has opened a channel to the cloud and is ready for your request.  Go online and find new .wav files - experiment with different sounds at various states in the UI manager!
 
-Your customers will expect their experience to be consistent across many Alexa-enabled devices.  You can learn best practices for implementing visual and audio cues on your device by visiting our [AVS UX Design overview page](https://developer.amazon.com/docs/alexa-voice-service/ux-design-overview.html).
+Your customers will expect their user experience to be consistent across any Alexa-enabled device.  You can learn best practices for implementing visual and audio cues on your device by visiting our [AVS UX Design overview page](https://developer.amazon.com/docs/alexa-voice-service/ux-design-overview.html).
 
 ---
