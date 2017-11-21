@@ -7,7 +7,7 @@ layout: nil
 
 {:.steps}
 ### Interact with Your Prototype
-You can now talk to your Pi by simply saying the wake word "Alexa". Try the following, and watch the output in the terminal window to see the directives and events that flow for each -
+You can now talk to your Intel Speech Enabling Developer Kit by simply saying the wake word "Alexa". Try the following, and watch the output in the terminal window to see the directives and events that flow for each -
 
 * Say "Alexa", then ask "What time is it?"  
 * Say "Alexa", then ask "What's the weather in Las Vegas?"  
