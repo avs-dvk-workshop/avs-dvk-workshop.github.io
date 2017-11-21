@@ -11,9 +11,10 @@ If you're speaking to an Alexa-enabled device, you may want an indicator that yo
 
 {:.steps}
 
-1. Navigate to */home/pi/avs-sdk/avs-device-sdk/SampleApp/src/* and open UIManager.cpp with a text editor.
+1. Navigate to */home/pi/sdk-folder/sdk-source/avs-device-sdk/SampleApp/src/* and open UIManager.cpp with a text editor.
 
-![UIM_location](../assets/UI_Manager_Location.png)
+
+[UIM_location](../assets/intelUImanagerLocation.png)
 
 2. At the top of the file where you see the other #include statements, add `#include <cstdlib>`.  This will enable your play function that you'll add in the next step.
 
@@ -27,11 +28,11 @@ If you're speaking to an Alexa-enabled device, you may want an indicator that yo
 
 4. Save your text file before closing it.
 5. You'll need to rebuild the Sample App for the changes to take effect.  First, quit out of your existing instance of the Sample App (if it's still running) by typing "**q** and hitting **return**.  Open a terminal and input the following command to rebuild the Sample App:
-`cd /home/pi/avs-sdk/build/SampleApp
+`cd /home/pi/sdk-folder/sdk-build/SampleApp
 make
 `
 6. Restart your Sample App by initiating the **startsample.sh** script in a terminal:
-`cd /home/pi/avs-sdk
+`cd /home/pi/sdk-folder
 bash startsample.sh
 `
 
