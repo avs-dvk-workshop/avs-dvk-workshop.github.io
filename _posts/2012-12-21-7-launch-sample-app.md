@@ -1,5 +1,5 @@
 ---
-title: '6. Launch the Client'
+title: '7. Launch the Client'
 
 layout: nil
 ---
