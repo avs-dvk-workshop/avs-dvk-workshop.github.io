@@ -33,9 +33,10 @@ Imagine if that song was actually directions, about to instruct you to exit off 
 2.  Right-click on **FocusManagerInterface.h** and select **Text Editor** to open the file.
 ![FM_location](../assets/IntelFocusManagerLocation.png)
 3.  Scroll down just a bit and you should see the channel priorities listed under FocusManagerInterface.  Lower numbers are higher priority - notice how rather than 1st/2nd/3rd, they're listed as 100/200/300?  This is to allow you the flexibility to create entirely new channels and place them wherever you wish - for example creating a channel number 1-99 would take priority over even **Dialog**.  
-4.  For this exercise, we want to bump up the priority of **Content** so that it doesn't get stepped on by **Alerts**.  `CONTENT_CHANNEL_PRIORITY` is currently set to `300` - let's make it a higher priority than Alerts by changing that 300 to `199`.
+4.  For this exercise, we want to bump up the priority of **Content** so that it doesn't get stepped on by **Alerts**.  `CONTENT_CHANNEL_PRIORITY` is currently set to `300` - let's make it a higher priority than Alerts by changing that 300 to **199**.  Save your **FocusManagerInterface.h** file and close it.
+
 ![FM_mod](../assets/focusManager.png)
-5.  Save your **FocusManagerInterface.h** file and close it.
+  
 
 {:.steps}
 ### Rebuild your modified Sample app
