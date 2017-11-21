@@ -3,8 +3,7 @@ title: '6. Launch the Client'
 
 layout: nil
 ---
-
-{:.steps}
+q
 ### Launch the Client
 
 The sample application is in the folder */home/pi/sdk-folder/sdk-build/SampleApp/src*.
@@ -17,13 +16,13 @@ You can see that it is starting with the highest debug level, **DEBUG9**. This w
 
 ## Terminal Window
 
-1. From a terminal window, run **startsample.sh** by pasting the following command into a terminal window:
+Open a new terminal window and run **startsample.sh** by pasting the following command into a terminal window:
 
 `cd /home/pi/sdk-folder
 sudo bash startsample.sh
 `
 
-2. You should see a connecting message, followed with a splash screen indicating your App has started successfully.
+You should see a connecting message, followed with a splash screen indicating your App has started successfully.
 
 ![](assets/SampleApp.png)
 
@@ -33,3 +32,4 @@ sudo bash startsample.sh
 1. Say "Alexa". You should see the console status change to **Listening**, then say "tell me a joke."  If Alexa responds with **Thinking**, then **Speaking**, you have a working prototype.  If you don't hear anything, ensure you have your earbuds plugged into the 3.5mm audio jack on your DSP board.  If you're using a speaker, ensure the speaker is turned on.  
 2. If your volume on your earbuds is too loud, you can use key commands in the sample app to turn down the volume.  Type **"p"**, hit enter, then hit **1** and **2** at the follow-up screens to turn down the volume.  
 ![](assets/VolumeDown.png)
+3. If your setup appears frozen and doesn't show **Thinking** when you speak, try typing **s** and hit enter to stop that interaction - if that doesn't work you can hit **q** to quit - try restarting the application.
