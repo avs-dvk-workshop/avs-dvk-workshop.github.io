@@ -1,5 +1,5 @@
 ---
-title: '8. Add Visual Meta-data using Display Cards'
+title: '10. Add Visual Meta-data using Display Cards'
 
 
 layout: nil
