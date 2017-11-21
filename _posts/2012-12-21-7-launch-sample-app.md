@@ -3,7 +3,7 @@ title: '7. Launch the Client'
 
 layout: nil
 ---
-q
+
 ### Launch the Client
 
 The sample application is in the folder */home/pi/sdk-folder/sdk-build/SampleApp/src*.
