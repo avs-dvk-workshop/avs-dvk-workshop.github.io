@@ -14,7 +14,7 @@ If you're speaking to an Alexa-enabled device, you may want an indicator that yo
 1. Navigate to */home/pi/sdk-folder/sdk-source/avs-device-sdk/SampleApp/src/* and open UIManager.cpp with a text editor.
 
 
-[UIM_location](../assets/intelUImanagerLocation.png)
+![UIM_location](../assets/intelUImanagerLocation.png)
 
 2. At the top of the file where you see the other #include statements, add `#include <cstdlib>`.  This will enable your play function that you'll add in the next step.
 
