@@ -38,13 +38,15 @@ Imagine if that song was actually directions, about to instruct you to exit off 
 ![FM_mod](../assets/focusManager.png)
   
 
-{:.steps}
+
 ### Rebuild your modified Sample app
 
 1.  You'll need to rebuild the Sample App for the changes to take effect.  First, quit out of your existing instance of the Sample App (if it's still running) by typing "**q** and hitting **return**.  Open a terminal and input the following command to rebuild the Sample App:
+
 `cd /home/pi/sdk-folder/sdk-build/SampleApp
 make
 `
+
 2.  You'll see the libraries rebuilding that were modified - it might take a couple of minutes.
 3.  When you get the message that your target SampleApp is 100% Built - it's time to re-launch the Sample App and try the same interaction!
 4.  Start the Sample App by running this command in the Terminal:
