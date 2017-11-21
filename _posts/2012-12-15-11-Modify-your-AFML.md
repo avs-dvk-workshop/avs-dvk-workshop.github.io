@@ -47,11 +47,12 @@ make
 2.  You'll see the libraries rebuilding that were modified - it might take a couple of minutes.
 3.  When you get the message that your target SampleApp is 100% Built - it's time to re-launch the Sample App and try the same interaction!
 4.  Start the Sample App by running this command in the Terminal:
+
 `cd /home/pi/sdk-folder
 bash startsample.sh
 `
-5.  Now, start a 30 second timer again and ask for another song from Alexa.
-6.  Despite your timer goes off, your song keeps playing!  Congratulations!
+
+Now, start a 30 second timer again and ask for another song from Alexa.  This time, when your timer went off, was your song interrupted?
 
 Feel free to experiment with other priorities in the Focus Manager to create the best user experience for your product's specific use case.  Keep in mind that when you ship your own Alexa-enabled product, your customers will expect that no matter what else is happening, *every* time they speak to Alexa, she will listen and respond instantly.  
 
