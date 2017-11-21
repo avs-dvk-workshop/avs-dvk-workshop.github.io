@@ -26,7 +26,7 @@ We're going to create a situation that will force the Focus Manager to take cont
 
 Imagine if that song was actually directions, about to instruct you to exit off the freeway - you might have just missed your turn!  Let's modify our Focus Manager for this specific device to increase the priority of the **Content** channel over the **Alarms** channel.
 
-{:.steps}
+
 ### Modify your Focus Manager Interface
 
 1.  In your File Manager, navigate to */home/pi/sdk-folder/sdk-source/avs-device-sdk/AVSCommon/SDKInterfaces/include/AVSCommon/SDKInterfaces*
@@ -48,16 +48,16 @@ make
 `
 
 2.  You'll see the libraries rebuilding that were modified - it might take a couple of minutes.
-3.  When you get the message that your target SampleApp is 100% Built - it's time to re-launch the Sample App and try the same interaction!
+3.  When you get the message that your target SampleApp is 100% built - it's time to re-launch the Sample App and try the same interaction!
 4.  Start the Sample App by running this command in the Terminal:
 
 `cd /home/pi/sdk-folder
 bash startsample.sh
 `
 
-Now, start a 30 second timer again and ask for another song from Alexa.  This time, when your timer went off, was your song interrupted?
+Now, start a 20 second timer again, and after you recieve confirmation that it's set - ask Alexa for another song.  This time, when your timer went off, was your song interrupted?
 
-Feel free to experiment with other priorities in the Focus Manager to create the best user experience for your product's specific use case.  Keep in mind that when you ship your own Alexa-enabled product, your customers will expect that no matter what else is happening, *every* time they speak to Alexa, she will listen and respond instantly.  
+Feel free to experiment with other priorities in the **Focus Manager** to create the best user experience for your product's specific use case.  Keep in mind that when you ship your own Alexa-enabled product, your customers will expect that no matter what else is happening, *every* time they speak to Alexa, she will listen and respond instantly.  
 
 {:.steps}
 ### Experiment with your Prototype
