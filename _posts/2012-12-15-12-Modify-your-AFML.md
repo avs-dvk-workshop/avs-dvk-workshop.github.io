@@ -29,9 +29,9 @@ Imagine if that song was actually directions, about to instruct you to exit off 
 {:.steps}
 ### Modify your Focus Manager Interface
 
-1.  In your File Manager, navigate to */home/pi/avs-sdk/avs-device-sdk/AVSCommon/SDKInterfaces/include/AVSCommon/SDKInterfaces*
+1.  In your File Manager, navigate to */home/pi/sdk-folder/sdk-source/avs-device-sdk/AVSCommon/SDKInterfaces/include/AVSCommon/SDKInterfaces*
 2.  Right-click on **FocusManagerInterface.h** and select **Text Editor** to open the file.
-![FM_location](../assets/focusManagerLocation.png)
+![FM_location](../assets/IntelFocusManagerLocation.png)
 3.  Scroll down just a bit and you should see the channel priorities listed under FocusManagerInterface.  Lower numbers are higher priority - notice how rather than 1st/2nd/3rd, they're listed as 100/200/300?  This is to allow you the flexibility to create entirely new channels and place them wherever you wish - for example creating a channel number 1-99 would take priority over even **Dialog**.  
 4.  For this exercise, we want to bump up the priority of **Content** so that it doesn't get stepped on by **Alerts**.  `CONTENT_CHANNEL_PRIORITY` is currently set to `300` - let's make it a higher priority than Alerts by changing that 300 to `199`.
 ![FM_mod](../assets/focusManager.png)
@@ -41,13 +41,13 @@ Imagine if that song was actually directions, about to instruct you to exit off 
 ### Rebuild your modified Sample app
 
 1.  You'll need to rebuild the Sample App for the changes to take effect.  First, quit out of your existing instance of the Sample App (if it's still running) by typing "**q** and hitting **return**.  Open a terminal and input the following command to rebuild the Sample App:
-`cd /home/pi/avs-sdk/build/SampleApp
+`cd /home/pi/sdk-folder/sdk-build/SampleApp
 make
 `
 2.  You'll see the libraries rebuilding that were modified - it might take a couple of minutes.
 3.  When you get the message that your target SampleApp is 100% Built - it's time to re-launch the Sample App and try the same interaction!
 4.  Start the Sample App by running this command in the Terminal:
-`cd /home/pi/avs-sdk
+`cd /home/pi/sdk-folder
 bash startsample.sh
 `
 5.  Now, start a 30 second timer again and ask for another song from Alexa.
