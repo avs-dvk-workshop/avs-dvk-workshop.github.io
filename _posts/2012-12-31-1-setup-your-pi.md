@@ -28,7 +28,7 @@ Your Intel kit includes a **Microphone Array** board to capture audio, a **Digit
 
 ![contents](/assets/Contents.png)
 
-Begin by attaching your Mic Array board to the DSP board.  You should see two sets of headers on the Mic Array board that match up to the top side of the DSP board.  Align them carefully before applying even pressure to fully mate the headers together.  Make sure the two circular PCBs are concentrially aligned to each other.
+Begin by attaching your Mic Array board to the DSP board.  You should see two sets of headers on the Mic Array board that match up to the top side of the DSP board.  Align them carefully before applying even pressure to fully mate the headers together.  Make sure the two circular PCBs are concentrically aligned to each other.
 
 ![Connect Mic PCB to DSP PCB](/assets/FlipConnect.png)
 
