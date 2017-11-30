@@ -24,7 +24,7 @@ After you've registered for an Amazon developer account, you'll need to create a
 4. Select **No** for *Will your device include a companion app?*
 5. Choose a product category, any category will work, and add a description.
 6. Select **Far-field** for *How will users interact with your product?*
-7. Image: Right click on this link to save this test image to your computer (or use your own), then upload it:   [https://developer.amazon.com/public/binaries/content/gallery/developerportalpublic/solutions/alexa/alexa-voice-service/images/reference-implementation-image.png](https://developer.amazon.com/public/binaries/content/gallery/developerportalpublic/solutions/alexa/alexa-voice-service/images/reference-implementation-image.png)
+7. **(This step is optional)** Image: Right click on this link to save this test image to your computer (or use your own), then upload it:   [https://developer.amazon.com/public/binaries/content/gallery/developerportalpublic/solutions/alexa/alexa-voice-service/images/reference-implementation-image.png](https://developer.amazon.com/public/binaries/content/gallery/developerportalpublic/solutions/alexa/alexa-voice-service/images/reference-implementation-image.png)
 8. Select **No** for *Do you intend to distribute this product commercially?*
 9. Select **No** for *Is this a children’s product or is it otherwise directed to children younger than 13 years old?*
 10. Click **Next**
