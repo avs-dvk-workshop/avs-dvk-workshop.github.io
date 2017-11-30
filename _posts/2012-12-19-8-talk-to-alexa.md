@@ -32,5 +32,7 @@ Multi-turn interactions can feel like a more natural method of communication, si
 ### Other Multi-Turn interactions to Try
 
 * Say "Alexa, Wikipedia" - you'll have the option of looking up any subject without having to speak the wake word before the subject.
+* Say "Alexa, play Yes Sire" - open up a top-rated Medieval themed game!
+* Say "Alexa, let's chat" to start a discussion with our new chat bots.
 
 ---
