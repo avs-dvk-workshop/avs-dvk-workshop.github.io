@@ -19,6 +19,7 @@ To start the setup and install script, do the following steps on your Raspberry 
 3. Check the confirmation printout of your credentials and hit "y" to continue.
 4. A browser window will open to request a **Refresh token** for your device - this is what allows your device to access the AVS in the cloud by authenticating with **Login with Amazon** (LWA).  If you shipped a million Alexa-enabled products to your customers, each device could use the same ProductID, ClientID, and Client Secret - but each individual device would require its own unique **Refresh Token**.  Input your credentials and log in - you should automatically generate the refresh token.  You can close the browser window after this step.
 ![](assets/TokenSuccess.png)
+5. If your refresh token isn't successfully delivered, you can try opening a 2nd browser window and manually go to http://localhost:3000.  Also be sure to double-check your ProductID was entered correctly (no spaces).
 
 {:.verify}
 ### Checkpoint 5
