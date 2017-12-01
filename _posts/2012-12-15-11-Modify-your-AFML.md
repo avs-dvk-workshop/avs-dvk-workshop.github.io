@@ -52,7 +52,7 @@ make
 4.  Start the Sample App by running this command in the Terminal:
 
 `cd /home/pi/sdk-folder
-bash startsample.sh
+sudo bash startsample.sh
 `
 
 Now, start a 20 second timer again, and after you recieve confirmation that it's set - ask Alexa for another song.  This time, when your timer went off, was your song interrupted?
