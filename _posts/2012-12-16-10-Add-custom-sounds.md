@@ -41,7 +41,7 @@ make
 You'll notice the files you've changed have to rebuild, but it should only take a minute.  When you get to 100%, relaunch your Sample App by initiating the **startsample.sh** script in a terminal:
 
 `cd /home/pi/sdk-folder
-bash startsample.sh
+sudo bash startsample.sh
 `
 
 {:.verify}
