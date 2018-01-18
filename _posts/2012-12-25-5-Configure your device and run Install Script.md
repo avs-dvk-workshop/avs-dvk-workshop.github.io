@@ -19,7 +19,7 @@ Your device needs to authenticate your unique information with the cloud in orde
 3. Check the confirmation printout of your credentials and hit "y" to continue.  Lots of messages and warnings will roll by - just continue on.
 4. A browser window will open to request a **Refresh token** for your device - **if your login is not working, open a new browser window and type http://localhost:3000 into the new browser, then login!** this token is what allows your device to access the AVS in the cloud by authenticating with **Login with Amazon** (LWA).  If you shipped a million Alexa-enabled products to your customers, each device could use the same ProductID, ClientID, and Client Secret - but each individual device would require its own unique **Refresh Token**.  Normally, the end user would get the refresh token when activating your product through their companion app, but for the purposes of this lab, you'll be the customer as well as the manufacturer.
 ![](assets/TokenSuccess.png)
-5. If your refresh token isn't successfully delivered, you can try opening a 2nd browser window and manually go to http://localhost:3000.  Also be sure to double-check your ProductID was entered correctly (no spaces).
+5. If your refresh token isn't successfully delivered, you can try opening a 2nd browser window and manually go to http://localhost:3000.  Note that the script must be running when you open the page!  Also be sure to double-check your ProductID was entered correctly (no spaces).
 
 {:.verify}
 ### Checkpoint 5
