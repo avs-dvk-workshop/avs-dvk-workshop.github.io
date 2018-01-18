@@ -19,7 +19,9 @@ Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
 1. Check that your micro SD card is inserted into the micro SD card slot on your Pi.  Note the contacts should face UP.
 2. Connect the keyboard and mouse to the USB ports.
 3. Connect your monitor using the HDMI port.
-4. Connect the Ethernet Cable.
+4. Connect to Ethernet if you have the option - otherwise, you can activate Wifi by clicking on the symbol in the top right corner and picking your SSID.
+![wifi](/assets/wifi.png)
+
 
 {:.steps}
 ### Assembling Your Intel Speech Enabling Developer Kit
@@ -55,7 +57,9 @@ Check the configuration of your kit against the picture as shown to ensure all c
 ### Booting Your Pi
 
 1. Plug in the power supply to the micro USB connector on the Pi.
-2. Open a web browser by clicking on the globe icon in the top left toolbar.
+2. Check your keyboard layout to make sure it's correct - navigate to Mouse and Keyboard Settings from the Raspberry icon on the top left corner of the screen.
+![Keyboard setup](/assets/KBAM.png)
+3. Open a web browser by clicking on the globe icon in the top left toolbar.
 
 {:.verify}
 ### Checkpoint 1
