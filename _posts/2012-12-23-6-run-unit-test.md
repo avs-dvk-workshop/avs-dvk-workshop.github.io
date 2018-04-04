@@ -18,5 +18,5 @@ sudo make all test
 
 For this workshop, tests have been pre-built to save time.  If you have your earbuds or speakers in, you'll hear Alexa run through a series of audio tests as well as functional tests.
 
-Your test should take around 4 minutes and result in 571 tests complete with 100% success.  As a developer, any time you modify your client's on-device software, you should run **Unit Test** to ensure nothing was unintentionally broken.  Now you're ready to launch your client!
+Your test should take around 4 minutes and result in 571 tests complete with 100% success.  We make the source code of our Sample App available so you can create a unique experience on your product - but any time you modify your client's on-device software, you should run **Unit Test** to ensure nothing was unintentionally broken.  Now you're ready to launch your client!
 
