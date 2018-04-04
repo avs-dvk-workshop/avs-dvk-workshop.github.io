@@ -5,6 +5,8 @@ title: '4. Enable Your Security Profile'
 layout: nil
 ---
 
+When you create your commercial products, you'll need to link your customer to their Amazon Alexa account - your app or sign-in screen will need to request permission to do that.  For the purposes of this prototype, you can use placeholder values as shown below.
+
 1. Open a web browser, and visit [https://developer.amazon.com/lwa/sp/overview.html](https://developer.amazon.com/lwa/sp/overview.html).
    ![](assets/avs-lwa-new-security-profile.png)
 
