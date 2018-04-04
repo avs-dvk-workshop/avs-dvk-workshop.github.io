@@ -35,14 +35,12 @@ After you've registered for an Amazon developer account, you'll need to create a
 1. Click on the **CREATE NEW PROFILE** link.
 	 ![](assets/avs-create-new-security-profile.png)
 
-2. Enter the following   
-	 - **Security Profile Name**: Alexa Voice Service Sample App Security Profile
-	 - **Security Profile Description**: Alexa Voice Service Sample App Security Profile Description
+2. Enter a Name and Description for your security profile (shown here are some examples)   
+	 - **Security Profile Name**: Intel Workshop Security Profile
+	 - **Security Profile Description**: Intel Workshop
 	 - Click **Next**.  
 
-   **Note:** These are suggested values. You provide custom information for **Security Profile Name** and **Security Profile Description**.
-
-	 Client ID and Client Secret will be generated for you.
+  	 Client ID and Client Secret will be generated for you.
 
 3. Select **Web** from the Web - Android/Kindle - iOS options under **Security Profile ID** in the **Platform Information** section.
 
