@@ -6,7 +6,7 @@ layout: nil
 ---
 This assumes the build is in the directory created by the script (sdk-folder).
 
-
+**Note: this step is optional.**
 
 #### Unit Tests
 
