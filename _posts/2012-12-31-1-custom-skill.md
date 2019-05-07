@@ -9,16 +9,21 @@ layout: nil
 ### Creation of the Alexa Skill
 
 In order to link Alexa to your AWS Device, we'll need to write a skill.  Let's start by logging into your developer account at  [Alexa Skill Kit Developer Console]( https://developer.amazon.com/alexa/console/ask).
-Clink on the blue button **"Create Skill"** button to get started. You will see the following page:
- ![alt text](/assets/02 - Create skill.png)
-Enter the Skill name. I selected *"AWS IoT Skill"* but you can choose whatever you'd like. You can leave the skill setting on **"Custom model"**.  After your skill name is input, click on **"Create Skill"**. You will be redirected to the following "build" page.
-**show picture with numbered things**
 
  ![alt text](/assets/01 - Amazon developer console.png)
+
+Clink on the blue button **"Create Skill"** button to get started. You will see the following page:
+
+ ![alt text](/assets/02 - Create skill.png)
+ 
+Enter the Skill name. I selected *"AWS IoT Skill"* but you can choose whatever you'd like. You can leave the skill setting on **"Custom model"**.  After your skill name is input, click on **"Create Skill"**. You will be redirected to the following "build" page.
+
+
+ ![alt text](/assets/02 - Create skill.png)
 Now, we're ready to build our skill. It looks complex, but we've broken it down into easy to follow steps below.  Let's get started!
 
 Click on the **"Invocation"** link to define the *key words* you'll need to say to Alexa in order to access your skill. You can choose the name shown here, or make up your own - later, if you're having trouble invoking the skill, you can always come back and edit the name to something a little easier for Alexa to understand.
- ![alt text](https://fs1.fex.net/show/168099638686/702626052/1bbd1163/04%20-%20Invocation%20name.png?1600w,0 "Invocation name")
+ ![alt text](/assets/04 - Invocation name.png)
 
 
 Now that we're able to invoke our skill, we need to define what the skill can *do*.  Click on the **"Intents (4)"** link and you'll see 3 required intents *"AMAZON.StopIntent"*, *"AMAZON.HelpIntent"*, *"AMAZON.CancelIntent"*, and one Built-in intent *"AMAZON.FallbackIntent"*. You can read more about them [here.](https://developer.amazon.com/docs/custom-skills/standard-built-in-intents.html)
@@ -26,11 +31,17 @@ Now that we're able to invoke our skill, we need to define what the skill can *d
 So far, we need to know that we should keep the required intents and can delete the Fallback intent by clicking on **"Delete"** in the *AMAZON.FallbackIntent* line.
 
 Now, click on a blue button **"+ Add intent"**. As we're going to control some LEDs connected to the Raspberry Pi GPIOs, let�s call it *"LEDControlIntent"*. Also, we want to know the state of the switch, connected to the same Raspberry Pi, thus let�s create another intent and call it *"SwitchCheckIntent"*, after creating *"LEDControlIntent"* (see page below).
- ![alt text](https://fs1.fex.net/show/168099638686/702626075/cfac757f/06%20-%20Adding%20LEDControlIntent.png?1600w,0 "Adding LEDControlIntent")  
+
+ ![alt text](/assets/05 - Addinig intents.png)  
+ 
 Click on the blue button **"Create custom intent"** to get to the following page.
-  ![alt text](https://fs1.fex.net/show/168099638686/702626083/66cc1c9a/07%20-%20Intents%20created.png?1600w,0 "Intents created")  
+
+  ![alt text](/assets/06 - Adding LEDControlIntent.png) 
+  
 Scroll down until you see **"Intent Slots"**.
+
   ![alt text](https://fs1.fex.net/show/168099638686/702626093/85917e91/08%20-%20Intent%20slots.png?1600w,0 "Intent slots")  
+  
 Intent slots represent the variable part of the phrase. Let�s say we�re going to control three LEDs � *red*, *green*, and *blue*. Each LED has two states � *ON* and *OFF*. So we need two slots � one for LED color, other for LED state. So let�s now create two slots � *color* and *state*:
  ![alt text](https://fs14.fex.net/show/168099638686/702626099/756f5dbb/09%20-%20Add%20intent%20slots.png?1600w,0 "Add intent slots")  
 But this is not all; we need to define slot types. Our slot types will be custom: one will contain three positions � *"red"*, *"green"*, *"blue"*, and the other will contain two positions � *"on"* and *"off"*. To do this, click on the link **"Slot types (0)"** in the left part of the page. You will see the following page.
