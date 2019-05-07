@@ -10,11 +10,11 @@ layout: nil
 
 In order to link Alexa to your AWS Device, we'll need to write a skill.  Let's start by logging into your developer account at  [Alexa Skill Kit Developer Console]( https://developer.amazon.com/alexa/console/ask).
 Clink on the blue button **"Create Skill"** button to get started. You will see the following page:
- ![alt text](https://fs1.fex.net/show/168099638686/702626030/6e83c3b3/02%20-%20Create%20skill.png?1600w,0 "Create new skill")
+ ![alt text](/assets/02 - Create skill.png)
 Enter the Skill name. I selected *"AWS IoT Skill"* but you can choose whatever you'd like. You can leave the skill setting on **"Custom model"**.  After your skill name is input, click on **"Create Skill"**. You will be redirected to the following "build" page.
 **show picture with numbered things**
 
- ![alt text](https://fs1.fex.net/show/168099638686/702626041/db0eda8f/03%20-%20Create%20skill%202.png?1600w,0 "Create skill")
+ ![alt text](/assets/01 - Amazon developer console.png)
 Now, we're ready to build our skill. It looks complex, but we've broken it down into easy to follow steps below.  Let's get started!
 
 Click on the **"Invocation"** link to define the *key words* you'll need to say to Alexa in order to access your skill. You can choose the name shown here, or make up your own - later, if you're having trouble invoking the skill, you can always come back and edit the name to something a little easier for Alexa to understand.
