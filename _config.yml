@@ -3,4 +3,4 @@ exclude: ['README.markdown']
 permalink: ':title'
 highlighter: 'pygments'
 safe: false
-title: 'AVS Workshop @ Re:Invent'
+title: 'AVS Workshop @ re:MARS'
