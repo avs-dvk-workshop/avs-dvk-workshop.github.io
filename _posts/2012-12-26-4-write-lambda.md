@@ -6,15 +6,15 @@ layout: nil
 ---
 ### Lambda function code
 Let�s return to the Lambda function page. Here we click on the name of our function in the middle of the page:
-![alt text](https://fs1.fex.net/show/168099638686/702626813/7de46010/55%20-%20Selecting%20lambda%20function.png?1600w,0 "Selecting lambda function")  
+![alt text](/assets/55 - Selecting lambda function.png)  
 Then scroll down until you see the text editor, this is where we put the code - yours should only have a simply "Hello World" snippet in there.
-![alt text](https://fs1.fex.net/show/168099638686/702626826/4c706a40/56%20-%20Lambda%20function%20code%20editor.png?1600w,0 "lambda function code editor")   
+![alt text](/assets/56 - Lambda function code editor.png)     
 First, we need to add some configuration information to allow the Lambda function to communicate with the IoT device:
 ```javascript
 var config = {};
-config.IOT_BROKER_ENDPOINT = "a3q6g7uqcbysvk.iot.us-east-1.amazonaws.com";
+config.IOT_BROKER_ENDPOINT = "xxxxxxxxxxx.iot.us-east-1.amazonaws.com";
 config.IOT_BROKER_REGION = "us-east-1";
-config.IOT_THING_NAME = "Raspberry_Pi_LED_Thing";
+config.IOT_THING_NAME = "Raspberry_Pi_LED_Thing(USE YOUR UNIQUE NAME HERE)";
 ```
 The variable `IOT_BROKER_ENDPOINT` contains the recently copied URL of your IoT device, so please insert your own URL there. `IOT_BROKER_REGION` is the region we selected when creating the IoT Thing and Lambda function. It should be **"us-east-1 (N. Virginia)"**. `IOT_THING_NAME` is the name of the IoT thing that you used.
 
@@ -220,7 +220,7 @@ As you can see, this function handles all the events occurring within the Lambda
 The most interesting part is handling the `event.request.type`. In this part, the app calls functions according to the sent request types. You can read more about intents types [here](https://developer.amazon.com/docs/custom-skills/request-types-reference.html).
 
 Now, as we have defined and written all the functions, we can click orange *"Save"* button in the top right of the page. If there are no errors it will save the function without any notices and the button will become grey: 
-![alt text](https://fs1.fex.net/show/168099638686/702626836/78ec4d40/57%20-%20Successfully%20created%20lambda%20function.png?1600w,0 "lambda function successfully created") 
+![alt text](/assets/57 - Successfully created lambda function.png)   
 
 
 Let�s put all that code in one block so that if there are any errors, it is easier to do a direct comparison:
