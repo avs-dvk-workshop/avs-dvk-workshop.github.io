@@ -10,6 +10,8 @@ layout: nil
 First we need to find either an RGB LED or three separate LEDs of red, green and blue. When you deal with LEDs don�t forget to put resistors of 330-470 Ohms in series for each one, otherwise your LEDs can be damaged. Also we need a switch and an external pull-down resistor of 10-100 kOhm. 
 I�ve used the Arduino RGB module. The connection is shown in the table below:
 
+(((Fletch note - ADD PHOTO OF ACTUAL SETUP)))
+
 Raspberry Pi Pin Number | BCM pin number | Module Pin | Switch | Pull-down resistor
  :---: | :---: | :---: | :---: | :---: 
 6| - | GND | - | Pin1
@@ -42,7 +44,7 @@ Also, we will need the js library to manage the Raspberry Pi GPIOs. Let�s use 
 Finally, make sure that you have installed Alexa SDK on your Raspberry Pi. If not, then follow the instructions from [here](https://github.com/alexa/avs-device-sdk/wiki/Raspberry-Pi-Quick-Start-Guide-with-Script).
 
 Let�s remember that we saved four certificate and key files during the IoT Thing creation in a folder. Let�s open the folder, create a new file there, and call it **"IoT_thing.js"** or whatever you�d like. You will have something like this:
-![alt text](https://fs1.fex.net/show/168099638686/702626909/232630d6/63%20-%20RPi%20working%20folder.png?1600w,0 "Raspberry Pi working folder")   
+![alt text](/assets/63 - RPi working folder.png)   
  
 **_Your certificate names will be different, so please use your names in your code._** 
 Open the **IoT_thing.js** file in your favorite text editor and write the following code.
@@ -176,13 +178,13 @@ Open the terminal window and switch to the folder with the just created file. Th
 `node IoT_thing.js`
 
 If there are no errors you will see the following:
-![alt text](https://fs1.fex.net/show/168099638686/702626921/112a9bea/64%20-%20RPi%20application%20launch.png?1600w,0 "Raspberry Pi app launch")   
+![alt text](/assets/64 - RPi application launch.png)   
 We have successfully connected to the AWS IoT Thing and updated the states of the Thing Shadow.
 Now open the second terminal window and switch to the folder where Alexa is located. And launch it with the command 
 `sudo bash startsample.sh`
 
 Now you have the Alexa client running on your Raspberry Pi. Try to say *"Alexa, ask my raspberry to turn the red led on"*. The red led should light up, and the corresponding message should appear in the terminal which runs **IoT_thing.js** file. Now try to ask *"Alexa, ask my raspberry about the pin state"* and hear the response, then change the switch state and ask again. You will see that the response differs.
-![alt text](https://fs1.fex.net/show/168099638686/702626929/0c42f9e4/65%20-%20RPI%20Alexa%20and%20application%20launch.png?1600w,0 "Raspberry Pi app and ALexa launched")   
+![alt text](/assets/65 - RPI Alexa and application launch.png)   
  
 
 Congratulations! You finally setup everything and now have the Alexa controlling your Raspberry Pi through the AWS services.
