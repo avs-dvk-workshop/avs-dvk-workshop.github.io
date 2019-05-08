@@ -52,6 +52,8 @@ Then click **Add**. Then scroll to the top of the page and click orange button *
 Now select **"Invocation"** in the menu at the left side of the page and use the **"Save model"** and **"Build model"** buttons in that order. The last action can take some time, so don�t worry about it. If there are no mistakes, you will see the following message finally: 
 ![alt text](/assets/34 - Alexa skill saving endpoints.png) 
 
+![alt text](/assets/35 - Alexa skill building model.png) 
+
 And with that, we�ve finished creation of the Alexa Skill! We will test it after we complete the Lambda function. Let�s first create the IoT device before writing the code for the Lambda function as we will need some data from it.
 
 
