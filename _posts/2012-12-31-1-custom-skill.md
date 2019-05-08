@@ -19,7 +19,7 @@ Clink on the blue button **"Create Skill"** button to get started. You will see 
 Enter the Skill name. I selected *"AWS IoT Skill"* but you can choose whatever you'd like. You can leave the skill setting on **"Custom model"**.  After your skill name is input, click on **"Create Skill"**. You will be redirected to the following "build" page.
 
 
- ![alt text](/assets/02 - Create skill.png)
+ ![alt text](/assets/03 - Create skill 2.png)
 Now, we're ready to build our skill. It looks complex, but we've broken it down into easy to follow steps below.  Let's get started!
 
 Click on the **"Invocation"** link to define the *key words* you'll need to say to Alexa in order to access your skill. You can choose the name shown here, or make up your own - later, if you're having trouble invoking the skill, you can always come back and edit the name to something a little easier for Alexa to understand.
@@ -40,27 +40,29 @@ Click on the blue button **"Create custom intent"** to get to the following page
   
 Scroll down until you see **"Intent Slots"**.
 
-  ![alt text](https://fs1.fex.net/show/168099638686/702626093/85917e91/08%20-%20Intent%20slots.png?1600w,0 "Intent slots")  
+  ![alt text](/assets/07 - Intents created.png)  
   
 Intent slots represent the variable part of the phrase. Let�s say we�re going to control three LEDs � *red*, *green*, and *blue*. Each LED has two states � *ON* and *OFF*. So we need two slots � one for LED color, other for LED state. So let�s now create two slots � *color* and *state*:
- ![alt text](https://fs14.fex.net/show/168099638686/702626099/756f5dbb/09%20-%20Add%20intent%20slots.png?1600w,0 "Add intent slots")  
+ ![alt text](/assets/08 - Intent slots.png)
+ 
 But this is not all; we need to define slot types. Our slot types will be custom: one will contain three positions � *"red"*, *"green"*, *"blue"*, and the other will contain two positions � *"on"* and *"off"*. To do this, click on the link **"Slot types (0)"** in the left part of the page. You will see the following page.
-![alt text](https://fs1.fex.net/show/168099638686/702626106/a0e7148a/10%20-%20Slot%20types.png?1600w,0 "Slot types")  
+![alt text](/assets/09 - Add intent slots.png)  
 Click on the blue button **"+ Add Slot Type"**. And type the name of the first Slot Type. I selected *LED_COLOR*.
- ![alt text](https://fs1.fex.net/show/168099638686/702626112/dc5cd54b/11%20-%20Add%20slot%20types.png?1600w,0 "Add slot type")   
+ ![alt text](/assets/10 - Slot types.png)   
 Click on the blue button **"Create custom slot type"** and add three *Slot Values* � *"red"*, *"green"*, *"blue"*. You will have the following:
-  ![alt text](https://fs1.fex.net/show/168099638686/702626117/a20616cb/12%20-%20Add%20slot%20values.png?1600w,0 "Add slot valies")
+  ![alt text](/assets/11 - Add slot types.png)
 Now, add the second slot type *LED_STATE* and its values *"on"* and *"off"* with the same sequence:
-   ![alt text](https://fs1.fex.net/show/168099638686/702626126/b447d4ed/13%20-%20Add%20slot%20values%202.png?1600w,0 "Add slot valies")
+   ![alt text](/assets/12 - Add slot values.png)
 Now we need to use our slot types. To do this, click on the **"LEDControlIntent"** in the left part of the page and scroll down. From the drop-down list of **"SLOT TYPE"** select *LED_COLOR* for *"color"* and *LED_STATE* for *"state"*:
- ![alt text](https://fs1.fex.net/show/168099638686/702626137/717cb7eb/14%20-%20Add%20SLOT%20TYPE%20to%20color.png?1600w,0 "Add SLOT TYPE for color")
- ![alt text](https://fs1.fex.net/show/168099638686/702626149/9e448644/15%20-%20SLOT%20TYPES%20added.png?1600w,0 "SLOT TYPEs added")
+ ![alt text](/assets/13 - Add slot values 2.png)
+ ![alt text](/assets/14 - Add SLOT TYPE to color.png)
 We don�t need a slot for the switch state, as there is no variable part of the phrase.
+![alt text](/assets/15 - SLOT TYPES added.png)  
+Now, scroll up to the top of the page. We need to fill the **"Sample Utterances"** field. It is very important part with represents the phrase that Alexa will recognize and do. For instance, to control the LED we can say "turn on the red LED", or "turn the green LED off", or "switch the blue LED on". When asking about the switch state, we can say "what is the switch state?", "is the switch on?" etc. We should write in here all the cases in the corresponding intents using previously created slot names putting them into the braces. For the *LEDControlIntent* it will look like this:
 
-Now, scroll up to the top of the page. We need to fill the **"Sample Utterances"** field. It is very important part with represents the phrase that Alexa will recognize and do. For instance, to control the LED we can say `"turn on the red LED"`, or `"turn the green LED off"`, or `"switch the blue LED on"`. When asking about the switch state, we can say `"what is the switch state?"`, `"is the switch on?"` etc. We should write in here all the cases in the corresponding intents using previously created slot names putting them into the braces. For the *LEDControlIntent* it will look like this:
-![alt text](https://fs1.fex.net/show/168099638686/702626160/aaf6bb5d/16%20-%20Sample%20utterances%20for%20color.png?1600w,0 "Sample utterances for color")  
+![alt text](/assets/16 - Sample utterances for color.png)
 For the *SwitchCheckIntent* it will look like this:
-![alt text](https://fs1.fex.net/show/168099638686/702626171/520d3475/17%20-%20Sample%20utterances%20for%20switch.png?1600w,0 "Sample utterances for switch")
+![alt text](/assets/17 - Sample utterances for switch.png)
 You can invent your own variants - whatever makes sense for your application. After you finish, press the **"Save Model"** button to save the changes.
 We�ve almost finished but we need to add the *ARN name* of *AWS Lambda function* to complete the setup of the Alexa Skill. So let�s now switch to the Lambda function creation and then return to this page. Thus don�t close it.
 
