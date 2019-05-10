@@ -5,7 +5,7 @@ title: '12. Write Lambda function code'
 layout: nil
 ---
 ### Lambda function code
-Let�s return to the Lambda function page. Here we click on the name of our function in the middle of the page:
+Let's return to the Lambda function page. Here we click on the name of our function in the middle of the page:
 ![alt text](/assets/55 - Selecting lambda function.png)  
 Then scroll down until you see the text editor, this is where we put the code - yours should only have a simply "Hello World" snippet in there.
 ![alt text](/assets/56 - Lambda function code editor.png)     
@@ -18,7 +18,7 @@ config.IOT_THING_NAME = "Raspberry_Pi_LED_Thing(USE YOUR UNIQUE NAME HERE)";
 ```
 The variable `IOT_BROKER_ENDPOINT` contains the recently copied URL of your IoT device, so please insert your own URL there. `IOT_BROKER_REGION` is the region we selected when creating the IoT Thing and Lambda function. It should be **"us-east-1 (N. Virginia)"**. `IOT_THING_NAME` is the name of the IoT thing that you used.
 
-Now let�s add some helper functions:
+Now let's add some helper functions:
 ```javascript
 function buildSpeechletResponse(title, output, repromptText, shouldEndSession) {
     return {
@@ -49,15 +49,15 @@ function buildResponse(sessionAttributes, speechletResponse) {
 }
 ```
 Function `BuildSpeechletResponse` builds the correct response on the Alexa Skill request. As you can see, it consists of three necessary parts: 
--	`outputSpeech` � the text that Alexa will say after receiving this response;
--	`card` � for the devices that have a display and are able to show cards;
--	`reprompt` � this is the test that Alexa will tell you in the case you opened the Skill but didn�t ask for any action.
+-	`outputSpeech` ' the text that Alexa will say after receiving this response;
+-	`card` ' for the devices that have a display and are able to show cards;
+-	`reprompt` ' this is the test that Alexa will tell you in the case you opened the Skill but didn't ask for any action.
 `ShouldEndSession` is the boolean variable that tells Alexa to keep the Skill running or to close the session.
 Function `BuildResponse` adds a header to the response and builds the ready-to-be-sent response.
 For more information about Alexa requests and responses please read [here]( 
 https://developer.amazon.com/docs/custom-skills/request-and-response-json-reference.html).
 
-Now, let�s create some functions that are invoked when the session starts:
+Now, let's create some functions that are invoked when the session starts:
 ```javascript
 function onSessionStarted(sessionStartedRequest, session) {
     console.log("onSessionStarted requestId=" + sessionStartedRequest.requestId + ",\n        sessionId=" + session.sessionId);
@@ -92,7 +92,7 @@ function onSessionEnded(sessionEndedRequest, session) {
     // Add cleanup logic here
 }
 ```
-These functions are fairly clear and don�t need additional explanation. 
+These functions are fairly clear and don't need additional explanation. 
 The next function handles intent requests and is one of the most important.
 ```javascript
 function onIntent(intentRequest, session, callback) {
@@ -114,7 +114,7 @@ function onIntent(intentRequest, session, callback) {
 ```
 If you remember during creation of the Alexa Skill, we saw three required intents - *CancelIntent*, *HelpIntent* and *StopIntent*. We also added our own intents *LEDControlIntent* and *SwitchCheckIntent*. Here, we handle them using the intent name.
 The ones we want to focus on are the **LEDControlIntent** and **SwitchCheckIntent**. 
-Let�s first consider the **LEDControlIntent**. First we read the values of the color and state and then invoke the function `handleIntentRequest` which code is listed below:
+Let's first consider the **LEDControlIntent**. First we read the values of the color and state and then invoke the function `handleIntentRequest` which code is listed below:
 ```javascript
 function handleLEDIntentRequest(callback, color, state) {
     var cardTitle = 'Control';
@@ -135,7 +135,7 @@ function handleLEDIntentRequest(callback, color, state) {
 }
 ```
 First, we check to see if `state` and `color` values have correct values. And if they do, we prepare the Alexa Speech output text, define the new state and invoke the function `updateShadow`. If values are wrong, we prepare a corresponding response speech. And finally call `callback` to return the response to the Alexa Skill. 
-Now, a quick note about the *Thing Shadow*. This is a special interface of the AWS IoT that allows interaction between a virtual Thing and real IoT device. It is called a "Shadow" as it reflects the state of the real device. So, even if the device is not available at the moment, the updated state is saved in the Shadow, and can be read or updated when the device becomes available. The Shadow has two fields to access � "desired" and "reported". The "desired" state is what state we want our device to have, and thus the Lambda function will update this field. The "reported" state is the confirmed state of the device, so we will update it from the Raspberry Pi code. 
+Now, a quick note about the *Thing Shadow*. This is a special interface of the AWS IoT that allows interaction between a virtual Thing and real IoT device. It is called a "Shadow" as it reflects the state of the real device. So, even if the device is not available at the moment, the updated state is saved in the Shadow, and can be read or updated when the device becomes available. The Shadow has two fields to access ' "desired" and "reported". The "desired" state is what state we want our device to have, and thus the Lambda function will update this field. The "reported" state is the confirmed state of the device, so we will update it from the Raspberry Pi code. 
 
 So, the function `updateShadow` is listed below.
 ```javascript
@@ -163,7 +163,7 @@ function updateShadow(desiredState) {
 First, we declare the variable `AWS` which we will use to interact with the AWS IoT device Shadow. Then we set the region and prepare the JSON `paramsUpdate` which will be sent to the IoT device Shadow. As you can notice, we update only the *"desired"* state.
 Then we create new variable `iotData` which will be tied to the created IoT device by means of the endpoint, the IoT device URL. Finally, we try to update the Thing Shadow and log the result of this operation.
 
-Now let�s consider the function that handles the `SwitchCheckIntent` � `handleSwitchIntentRequest`:
+Now let's consider the function that handles the `SwitchCheckIntent` ' `handleSwitchIntentRequest`:
 ```javascript
 function handleSwitchIntentRequest(callback) {
     var AWS = require('aws-sdk');
@@ -187,11 +187,11 @@ function handleSwitchIntentRequest(callback) {
     });
 }
 ```
-The first part is very similar to the function `updateShadow`. The difference is that we don�t update the shadow state but read it with the function `getThingShadow`.
+The first part is very similar to the function `updateShadow`. The difference is that we don't update the shadow state but read it with the function `getThingShadow`.
 If there is no error, it returns the shadow value in the `data` variable. First, we check if there is an error, and prepare the corresponding message.
-Then we parse the data payload and check if the value under the `switch` key is not null. If the value is okay, we prepare the message containing the switch state. Otherwise, the message says that the value is undefined. The last case can happen at the first launch when our Raspberry Pi hasn�t reported yet about the switch state. Finally, we invoke the callback function to send the response to the Alexa skill.
+Then we parse the data payload and check if the value under the `switch` key is not null. If the value is okay, we prepare the message containing the switch state. Otherwise, the message says that the value is undefined. The last case can happen at the first launch when our Raspberry Pi hasn't reported yet about the switch state. Finally, we invoke the callback function to send the response to the Alexa skill.
 
-We�re almost done. Now we need to update the main function � that handles the Lambda function.
+We're almost done. Now we need to update the main function ' that handles the Lambda function.
 ```javascript
 exports.handler = function (event, context, callback) {
     try {
@@ -223,7 +223,7 @@ Now, as we have defined and written all the functions, we can click orange *"Sav
 ![alt text](/assets/57 - Successfully created lambda function.png)   
 
 
-Let�s put all that code in one block so that if there are any errors, it is easier to do a direct comparison:
+Let's put all that code in one block so that if there are any errors, it is easier to do a direct comparison:
 ```javascript
 "use strict";
 var config = {};
@@ -380,7 +380,7 @@ exports.handler = function (event, context, callback) {
 };
 ```
 
-Now we have created the Alexa Skill, Lambda function, and IoT Thing. Let�s perform a test of the whole system without connecting our Raspberry yet.
+Now we have created the Alexa Skill, Lambda function, and IoT Thing. Let's perform a test of the whole system without connecting our Raspberry yet.
 
 
 

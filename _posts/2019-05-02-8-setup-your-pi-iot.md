@@ -7,8 +7,8 @@ layout: nil
 
 ###	Raspberry Pi hardware and software setup
 
-First we need to find either an RGB LED or three separate LEDs of red, green and blue. When you deal with LEDs don�t forget to put resistors of 330-470 Ohms in series for each one, otherwise your LEDs can be damaged. Also we need a switch and an external pull-down resistor of 10-100 kOhm. 
-I�ve used the Arduino RGB module. The connection is shown in the table below:
+First we need to find either an RGB LED or three separate LEDs of red, green and blue. When you deal with LEDs don't forget to put resistors of 330-470 Ohms in series for each one, otherwise your LEDs can be damaged. Also we need a switch and an external pull-down resistor of 10-100 kOhm. 
+I've used the Arduino RGB module. The connection is shown in the table below:
 
 (((Fletch note - ADD PHOTO OF ACTUAL SETUP)))
 
@@ -38,12 +38,12 @@ You will see the versions of your products.
 Next, we need to install the AWS IoT SDK. This is very simply:
 `npm install aws-iot-device-sdk`
 
-Also, we will need the js library to manage the Raspberry Pi GPIOs. Let�s use **"onoff"** for this. It is quite simple and supports GPIO interrupts so we don�t need to continuously poll the button. To install it, type:
+Also, we will need the js library to manage the Raspberry Pi GPIOs. Let's use **"onoff"** for this. It is quite simple and supports GPIO interrupts so we don't need to continuously poll the button. To install it, type:
 `npm install onoff`
 
 Finally, make sure that you have installed Alexa SDK on your Raspberry Pi. If not, then follow the instructions from [here](https://github.com/alexa/avs-device-sdk/wiki/Raspberry-Pi-Quick-Start-Guide-with-Script).
 
-Let�s remember that we saved four certificate and key files during the IoT Thing creation in a folder. Let�s open the folder, create a new file there, and call it **"IoT_thing.js"** or whatever you�d like. You will have something like this:
+Let's remember that we saved four certificate and key files during the IoT Thing creation in a folder. Let's open the folder, create a new file there, and call it **"IoT_thing.js"** or whatever you'd like. You will have something like this:
 ![alt text](/assets/63 - RPi working folder.png)   
  
 **_Your certificate names will be different, so please use your names in your code._** 
@@ -52,20 +52,20 @@ Open the **IoT_thing.js** file in your favorite text editor and write the follow
 var awsIot = require('aws-iot-device-sdk');
 const Gpio = require('onoff').Gpio;
 ```
-Here, we create two variables � `awsIot` will be used to cooperate with the AWS IoT services, and `Gpio` based on the `onoff` library will be used to control the Raspberry Pi GPIOs. Then, let�s configure pins 11, 12, and 13 (PCM 17, 18 and 27) as outputs, and pin 15 (PCM 22) as an input:
+Here, we create two variables ' `awsIot` will be used to cooperate with the AWS IoT services, and `Gpio` based on the `onoff` library will be used to control the Raspberry Pi GPIOs. Then, let's configure pins 11, 12, and 13 (PCM 17, 18 and 27) as outputs, and pin 15 (PCM 22) as an input:
 ```javascript
 const redLED = new Gpio(17, 'out');
 const blueLED = new Gpio(18, 'out');
 const greenLED = new Gpio(27, 'out');
 const button = new Gpio(22, 'in', 'both', {debounceTimeout: 20});
 ```
-The `onoff` library supports interrupts handling, so we configure it to react on both high-to-low and low-to-high edges. Also, it allows debounce by setting the debounce timeout. As you can see, I�ve set it to 20 ms which is enough for the average switch, but you can adjust it as needed.
-Let�s declare two string constants for the two topics � one is for receiving the messages about updating the Shadow state, and another for publishing updates of the reported Shadow state. You can read more about topics [here](https://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-mqtt.html).
+The `onoff` library supports interrupts handling, so we configure it to react on both high-to-low and low-to-high edges. Also, it allows debounce by setting the debounce timeout. As you can see, I've set it to 20 ms which is enough for the average switch, but you can adjust it as needed.
+Let's declare two string constants for the two topics ' one is for receiving the messages about updating the Shadow state, and another for publishing updates of the reported Shadow state. You can read more about topics [here](https://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-mqtt.html).
 ```javascript
 update_docs_topic = "$aws/things/Raspberry_Pi_LED_Thing/shadow/update/documents";
 update_topic = "$aws/things/Raspberry_Pi_LED_Thing/shadow/update";
 ```
-Then let�s declare two variables to store the state and the color received from the Thing Shadow:
+Then let's declare two variables to store the state and the color received from the Thing Shadow:
 ```javascript
 var LED_color;
 var LED_state;
@@ -81,7 +81,7 @@ var device = awsIot.device({
 ```
 Here we mention paths and filenames of the private key, certificate and root certificate files. **_Please make sure you type the name of your files_**. The host is the same URL address of the IoT Thing that we used for creating the Lambda function. **_Also make sure that you specify your host URL_**.
 
-We will manage just two events of the IoT device � `connect` and `message`. The first occurs on the launch of the application, and the second occurs when a new message appears in the topic we subscribe on.
+We will manage just two events of the IoT device ' `connect` and `message`. The first occurs on the launch of the application, and the second occurs when a new message appears in the topic we subscribe on.
 Here is the code of the `connect` event handler:
 ```javascript
 device.on('connect', function() {
@@ -151,7 +151,7 @@ device.on('message', function(topic, payload) {
 	}
 });
 ```
-We parse the JSON payload of the incoming message and log it into the console. Then we check if we got the message from the correct topic (which is obvious because we�ve subscribed only on this single topic, but best to double check when things get busier). Then we check the values of the `payload.current.state.desired.state` and `payload.current.state.desired.color` which represent the state and the color of the LED which we want to change and save them into the `LED_state` and `LED_color` variables accordingly. 
+We parse the JSON payload of the incoming message and log it into the console. Then we check if we got the message from the correct topic (which is obvious because we've subscribed only on this single topic, but best to double check when things get busier). Then we check the values of the `payload.current.state.desired.state` and `payload.current.state.desired.color` which represent the state and the color of the LED which we want to change and save them into the `LED_state` and `LED_color` variables accordingly. 
 We then check if the current state of the pin is different from the desired state. If it is, we update the pin state with the function `writeSync`, and publish the updated reported state in the `update_topic`. If the pin state was the same as desired, we just skip it and do nothing.
 
 Finally, we need to update the shadow state once the switch changes its state. To do this, it is more convenient to use the GPIO interrupt handler. `onoff` library provides this, so the interrupt handler is listed below:
@@ -173,7 +173,7 @@ button.watch(function (err, value) {
 ```
 In this handler `function` returns the error `err` when something goes wrong or the switch state `value` otherwise. Thus, we define the `new_state` variable like we did for the `update_shadow_on_start` function but include only switch state into it. Then we specify the payload and publish it to the `update_topic`.
 
-That is all the code for the Raspberry Pi! Now let�s try to run it.
+That is all the code for the Raspberry Pi! Now let's try to run it.
 Open the terminal window and switch to the folder with the just created file. Then type
 `node IoT_thing.js`
 
