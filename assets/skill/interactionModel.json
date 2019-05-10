@@ -1,0 +1,103 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my raspberry",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "LEDControlIntent",
+                    "slots": [
+                        {
+                            "name": "color",
+                            "type": "LED_COLOR"
+                        },
+                        {
+                            "name": "state",
+                            "type": "LED_STATE"
+                        }
+                    ],
+                    "samples": [
+                        "change the {color} to {state}",
+                        "turn the {color} led {state}",
+                        "switch the {color} led {state}",
+                        "turn {state} the {color} led",
+                        "switch {state} the {color} led",
+                        "set the {color} led {state}"
+                    ]
+                },
+                {
+                    "name": "SwitchCheckIntent",
+                    "slots": [
+                        {
+                            "name": "state",
+                            "type": "LED_STATE"
+                        }
+                    ],
+                    "samples": [
+                        "switch state",
+                        "status",
+                        "if the switch is {state}",
+                        "what is the state of the switch",
+                        "about the switch state"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LED_COLOR",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "blue"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "green"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "red"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LED_STATE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "off"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "on"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
