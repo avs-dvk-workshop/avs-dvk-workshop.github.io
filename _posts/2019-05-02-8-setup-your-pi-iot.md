@@ -21,8 +21,7 @@ Refer to the pictures below for the hardware assembly.
 9. Place the yellow jumper wire linking the switch to the GPIO pin on the breadbord. Use the table below as a guide.
 
 ![Pi_iot_complete](../assets/pi_iot_complete.jpeg)
-![Pi_iot_board_1](../assets/pi_iot_board_1.jpg)
-![Pi_iot_board_2](../assets/pi_iot_board_2.jpg)
+![Pi_iot_board_1](../assets/pi_iot_board_1.jpg) ![Pi_iot_board_2](../assets/pi_iot_board_2.jpg)
 
 ## Jumper wire connection table
 
