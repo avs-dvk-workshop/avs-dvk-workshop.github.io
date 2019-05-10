@@ -5,12 +5,26 @@ title: '8. Setup your Pi for AWS IoT'
 layout: nil
 ---
 
-###	Raspberry Pi hardware and software setup
+###	Hardware assembly
 
-First we need to find either an RGB LED or three separate LEDs of red, green and blue. When you deal with LEDs don't forget to put resistors of 330-470 Ohms in series for each one, otherwise your LEDs can be damaged. Also we need a switch and an external pull-down resistor of 10-100 kOhm. 
-I've used the Arduino RGB module. The connection is shown in the table below:
+Refer to the pictures below for the hardware assembly.
 
-(((Fletch note - ADD PHOTO OF ACTUAL SETUP)))
+1. Shut down your Pi from the desktop menu, and disconnect the power cable.
+2. Attach the GPIO breakout board to the breadboard.
+3. Attach the ribbon cable to the GPIO breakout board.
+4. Attach the other end of the ribbon cable to the 40 pin header on the Pi.
+5. Place the red, green and blue LEDs on the breadboard.
+6. Place the 220 Ohms (red-red-black-gold) LED resistors on the breadboard.
+7. Please the 3 red,greeen, and blue colored jumper wires linking the GPIO pins controlling the LEDs on the breadboard. Use the table below as a guide.
+8. Place the switch on the breadboard.
+9. Pleace the 10k Ohms (brown-black-orange-gold) pull-down resistor for the switch on the breadboard. 
+9. Place the yellow jumper wire linking the switch to the GPIO pin on the breadbord. Use the table below as a guide.
+
+![Pi_iot_complete](../assets/pi_iot_complete.jpeg)
+![Pi_iot_board_1](../assets/pi_iot_board_1.jpg)
+![Pi_iot_board_2](../assets/pi_iot_board_2.jpg)
+
+## Jumper wire connection table
 
 Raspberry Pi Pin Number | BCM pin number | Module Pin | Switch | Pull-down resistor
  :---: | :---: | :---: | :---: | :---: 
@@ -23,25 +37,17 @@ Raspberry Pi Pin Number | BCM pin number | Module Pin | Switch | Pull-down resis
 
 Here, in the table, in the first column, these are the physical pin numbers of the Raspberry Pi, and in the second column the pin numbers according to the BCM numeration as our GPIO library will use it.
 
-Next we need to install required software. So, launch your Raspberry Pi and open the terminal window.
+###     Software setup
 
-As we will use *Node.js* for our code we need to install it first. In the terminal window type:
-`sudo apt-get install node`
+The Raspbian OS Image for the workshop has the following required software packages pre-installed:
 
-Then we need to install the Node package manager *npm*:
-`sudo apt-get install npm`
+* node: We are using Node.js for our code. This package is required to execute node programs.
 
-To verify that you installed them properly, type
-`node -v; npm -v`
+* npm: Node package manager. Used to install Node packages.
 
-You will see the versions of your products.
-Next, we need to install the AWS IoT SDK. This is very simply:
-`npm install aws-iot-device-sdk`
+* AWS IoT SDK for node (aws-iot-device-sdk): Used to communicate with the AWS IoT service.
 
-Also, we will need the js library to manage the Raspberry Pi GPIOs. Let's use **"onoff"** for this. It is quite simple and supports GPIO interrupts so we don't need to continuously poll the button. To install it, type:
-`npm install onoff`
-
-Finally, make sure that you have installed Alexa SDK on your Raspberry Pi. If not, then follow the instructions from [here](https://github.com/alexa/avs-device-sdk/wiki/Raspberry-Pi-Quick-Start-Guide-with-Script).
+* onoff node package (onoff): Manage the Raspberry Pi GPIOs. It is quite simple and supports GPIO interrupts so we don't need to continuously poll the button.
 
 Let's remember that we saved four certificate and key files during the IoT Thing creation in a folder. Let's open the folder, create a new file there, and call it **"IoT_thing.js"** or whatever you'd like. You will have something like this:
 ![alt text](/assets/63 - RPi working folder.png)   
