@@ -22,5 +22,5 @@ Let's now see how invocation of this function affects the **Thing Shadow**. Let'
 ![alt text](/assets/62 - IoT Thing Shadow.png)   
 If you can see all of this, that means that everything was set up correctly and all Amazon services work fine. 
 You also can ask Alexa about the switch state *"Alexa, ask my raspberry about the switch state"*. But unless you don't have your Raspberry Pi set up, it will say that the state is undefined, as you can see, there is no `"switch"` key in the Shadow state yet.
-Now, we need to setup our Raspberry Pi to make it read the Shadow state and change the LEDs states according to it, and also to update the shadow state when the switch changes its state.
+Now, we need to setup the IoT software on the Raspberry Pi that will read the Shadow state and change the LEDs states accordingingly, and also to update the shadow state when the switch changes its state.
 
