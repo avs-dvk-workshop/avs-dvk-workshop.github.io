@@ -48,7 +48,7 @@ If you're a returning developer that has already created products in your dashbo
 
    - Write a name for your Client ID here - you can just use **Prototype**.
    - Click "Generate ID".  You should get a Client ID and an option to download it.
-   - If you're creating this product profile on your Raspberry Pi, click **Download** to get your credentials onto your AVS prototype.  Save the config.json file to your `/home/pi` directory.  When you click download, it'll automatically put it in your /home/pi/downloads folder.
+   - If you're creating this product profile on your Raspberry Pi, click **Download** to get your credentials onto your AVS prototype. When you click download, the file will automatically be put in your /home/pi/Downloads folder. This file will be copied and used at a later step.
    - Check the box beside *I agree to the AVS agreement and the AVS Program Requirements.*
 	 - Click **FINISH**.
 

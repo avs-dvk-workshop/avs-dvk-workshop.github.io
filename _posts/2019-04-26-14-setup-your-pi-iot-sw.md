@@ -15,7 +15,7 @@ The Raspbian OS Image for the workshop has the following required software packa
 
 * onoff node package (onoff): Manage the Raspberry Pi GPIOs. It is quite simple and supports GPIO interrupts so we don't need to continuously poll the button.
 
-Let's remember that we saved four certificate and key files during the IoT Thing creation in a folder. Let's open the folder, create a new file there, and call it **"IoT_thing.js"** or whatever you'd like. You will have something like this:
+Let's remember that we saved four certificate and key files during the IoT Thing creation in a folder: *"/home/pi/iot"*. Let's open the folder, create a new file there, and call it **"IoT_thing.js"** or whatever you'd like. You will have something like this:
 ![alt text](/assets/63 - RPi working folder.png)   
  
 **_Your certificate names will be different, so please use your names in your code._** 
