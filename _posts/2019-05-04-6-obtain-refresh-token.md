@@ -11,7 +11,7 @@ Initialize the sample app by pasting or typing the following command into your t
 
 ```
 cd /home/pi/
-sudo bash startsample.sh
+bash avs_run.sh
 ```
 
 Wait for the sample app to display a message like the one in the picture below (but, a different code of course) -  If you don't see this, but you see "waiting for authorization" messages going by, then scroll up!  It's easy to miss the authorization code since the terminal window fills up pretty fast.  Note - you need to leave this process running while you authorize, don't close the window or otherwise stop the startsample script.
@@ -26,9 +26,6 @@ Wait for the sample app to display a message like the one in the picture below (
  6. At this point the sample app will print a message informing you that you are now authorized!  
 
 Your raspberry pi is now ready to use the sample app. The next time you start the sample app, you will not need to go through the authorization process.
-
-Now, you'll need to open a browser to add a visual interface to your prototype.  Open a new chromium tab to the following URL: 
-`file:///home/pi/avs-device-sdk/GUI/js/dist/index.html?insecure=1`  
 
 Note, this should autocomplete in your browser when you start typing - it's also in the bookmarks as "Alexa Home Screen".
 

@@ -12,16 +12,16 @@ Say "Alexa" into the microphone on your Raspberry Pi to trigger the **Wake Word 
 
 If you cannot hear Alexa's response, ensure your speaker/earbuds are turned on and plugged in to your Raspberry Pi's 3.5mm audio jack.  Check that your audio output on your Pi is set to **Analog** by right-clicking on the speaker icon in the top right corner of the screen.
 
-Try the following interactions, and note how the screen allows for Alexa to provide information-rich interactions -
+Try the following interactions -
   
 
-* Say "Alexa", then ask "What's the weather in Las Vegas?"  Note how instead of just hearing today's weather over the speaker, you also get a 5 day forecast visually as a bonus!
+* Say "Alexa", then ask "What's the weather in Las Vegas?"
 
-* Say "Alexa", then say "Play Katy Perry on TuneIn."  You get album art and transport controls (try clicking "next"!)
+* Say "Alexa", then say "Play Katy Perry on TuneIn." 
 
-* Say "Alexa", then say "Add Milk, Eggs, Bread and Orange Juice to my shopping list."  You get a visual confirmation of how your list is shaping up, and if you fill up your list you can browse by using the scroll wheel (or if you had a touchscreen, a swipe)
+* Say "Alexa", then say "Add Milk, Eggs, Bread and Orange Juice to my shopping list."
 
-* Say "Alexa", then say "Who is Angela Merkel?"  Wikipedia provides a nice picture for your screen and some extra stats.  A picture is worth a thousand words!
+* Say "Alexa", then say "Who is Angela Merkel?"
 
 ### Try a Multi-Turn interaction
 
