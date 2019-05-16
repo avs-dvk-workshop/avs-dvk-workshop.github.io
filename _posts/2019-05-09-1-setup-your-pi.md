@@ -17,8 +17,9 @@ Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
 {:.steps}
 ### Assembling Your Pi
 
-1. Check that your micro SD card is inserted into the micro SD card slot on your Pi.
-2. Plug in the USB microphone and 3.5mm earbuds.
+1. Install the heat sinks included in your kit. Peel off the blue plastic on the heat sinks, then place them on the two integrated circuits on the Pi, pressing gently.
+2. Check that your micro SD card is inserted into the micro SD card slot on your Pi.
+3. Plug in the USB microphone and 3.5mm earbuds.
 4. Connect the keyboard and mouse to the USB ports.
 5. Connect your monitor using the HDMI port.
 6. Insert ethernet cable into the Pi.  (not shown in this picture)
