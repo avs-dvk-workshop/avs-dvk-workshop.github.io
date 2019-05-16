@@ -8,7 +8,7 @@ layout: nil
 {:.steps}
 ### Interact with Your Prototype
 
-Say "Alexa" into the microphone on your Raspberry Pi to trigger the **Wake Word Engine**.  Since you are using a single microphone in a noisy environment, you may want to speak closely into your microphone to ensure your voice is heard clearly.  You should see a blue light on the bottom of your screen, indicating the wake word was recognized.  Then say "tell me a joke." If Alexa responds, congratulations!  You have a working prototype.  
+Say "Alexa" into the microphone on your Raspberry Pi to trigger the **Wake Word Engine**.  Since you are using a single microphone in a noisy environment, you may want to speak closely into your microphone to ensure your voice is heard clearly.  You should see scrolling debug messages on the terminal screen, indicating the wake word was recognized.  Then say "tell me a joke." If Alexa responds, congratulations!  You have a working prototype.  
 
 If you cannot hear Alexa's response, ensure your speaker/earbuds are turned on and plugged in to your Raspberry Pi's 3.5mm audio jack.  Check that your audio output on your Pi is set to **Analog** by right-clicking on the speaker icon in the top right corner of the screen.
 
