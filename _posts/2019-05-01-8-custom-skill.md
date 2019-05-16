@@ -18,7 +18,7 @@ Clink on the blue button **"Create Skill"** button to get started. You will see 
 
  ![alt text](/assets/02 - Create skill.png)
  
-Enter the Skill name. I selected *"AWS IoT Skill"* but you can choose whatever you'd like. You can leave the skill setting on **"Custom model"**.  After your skill name is input, click on **"Create Skill"**. You will be redirected to the following "build" page.
+Enter the Skill name. I chose *"AWS IoT Skill"* but you can choose whatever you'd like. You can leave the skill setting on **"Custom model"** and under the **Choose a method to host your skill's back end resources**, keep the default selection of **"Provision Your Own"**. Click on **"Create Skill"**. Keep the **Start from scratch** selected. You will be redirected to the following "build" page.
 
 
  ![alt text](/assets/03 - Create skill 2.png)
