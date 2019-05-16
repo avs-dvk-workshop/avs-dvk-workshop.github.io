@@ -31,7 +31,7 @@ Now return to the Lambda function creation page, and you may need to refresh the
 ![alt text](/assets/25 - Finalizing role creation.png)    
 Finally, click on the orange button **"Create function"**.
 
-4.	Now let's setup our function. 
+3.	Now let's setup our function. 
 ![alt text](/assets/26 - Selecting created role and finalizing creation of lambda function.png)    
 First, we need to add a trigger which will invoke the function. As it will be called by an Alexa Skill, let's select *"Alexa Skill Kit"* in the **"Add trigger"** list in the left part of the page:
 ![alt text](/assets/27 - Lambda function setup.png)    
@@ -47,7 +47,7 @@ Return to the Lambda function page and paste *Skill ID* in the appropriate field
 ![alt text](/assets/32 - Copying skill ID.png)    
 Then click **Add**. Then scroll to the top of the page and click orange button **"Save"** in the top right of the page. 
 
-5.	Let's now finish configuration of our Skill. Return to the Alexa Skill page, scroll to the top of the page and click **"Save Endpoints"**. If there are no mistakes, the corresponding message will appear:
+4.	Let's now finish configuration of our Skill. Return to the Alexa Skill page, scroll to the top of the page and click **"Save Endpoints"**. If there are no mistakes, the corresponding message will appear:
 ![alt text](/assets/33 - Inserting skill ID to the lambda function.png)   
 Now select **"Invocation"** in the menu at the left side of the page and use the **"Save model"** and **"Build model"** buttons in that order. The last action can take some time, so don't worry about it. If there are no mistakes, you will see the following message finally: 
 ![alt text](/assets/34 - Alexa skill saving endpoints.png) 
@@ -56,12 +56,16 @@ Now select **"Invocation"** in the menu at the left side of the page and use the
 
 And with that, we've finished creation of the Alexa Skill! We will test it after we complete the Lambda function. 
 
-6. Go back to your Lambda function, let's add some code to handle the different utterances and intents coming from our skill! 
+5. Go back to your Lambda function, let's add some code to handle the different utterances and intents coming from our skill! 
 First, let's download a zip file that contains some starter code, download the following zip: (https://github.com/avs-dvk-workshop/avs-dvk-workshop.github.io/blob/master/assets/skill/VoiceControlWorkshop-Skill.zip?raw=true)
 
 Under the "Function Code" section of the Lambda screen, you should see a dropdown for **"Code entry type"**, click that dropdown and choose **Upload a zip file**. You'll then click the **"Upload"** button and choose the *VoiceControlWorkshop-Skill.zip* file you just downloaded. Click **"Save"** in the upper-right corner of the screen and you should see your function populated!
 
 ![alt text](/assets/35 - Lambda Code Upload.gif).
+
+6. Scroll down on the page until you see the **"Basic Settings"** section on the right side and update the timeout from **"3"** to **"8"** seconds. 
+
+![alt text](/assets/35 - Lambda Timeout Settings.png).
 
 7. Now let's test it! 
 At the top of the page you'll see a **"Test"** button. Click that and it will ask you to configure a test event. From the dropdown of the Event template, choose **"Amazon Alexa Start Session"**. Give it a name like **startSession**, scroll down and click **Create**.
