@@ -1,14 +1,14 @@
 ---
-title: '13. Test the ASK/Lambda/IoT connection'
+title: '14. Test the ASK/Lambda/IoT connection'
 
 
 layout: nil
 ---
 ### Testing the communication and cooperation between services
 
-Let's switch to the **Alexa Skill** page. Our skill is already saved and built. If not, please perform these operations as described earlier.
-Now switch from the **"Build"** page to the **"Test"** page from the menu in the top of the page:
+Let's switch to the **Alexa Skill** page and go the **"Test"** page from the menu in the top of the page:
 ![alt text](/assets/58 - Test page of Alexa skill.png)   
+This time, instead of just launching the skill, let's give a command to try to control the LED.
 Enable the toggle **"Test is enabled for this skill"**. Now we can perform the test. You can press the microphone icon and say your request or simply type the request in the field to the left of the microphone. Let's stick with the second option and type *"tell my raspberry to turn the red led on"*, and then press **"Enter"** on the keyboard.
 If you have an error like the one in the image below, you need to increase the timeout:
 ![alt text](/assets/59 - Error in skill response.png)    

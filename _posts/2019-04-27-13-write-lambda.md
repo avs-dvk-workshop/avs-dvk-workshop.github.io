@@ -1,5 +1,5 @@
 ---
-title: '12. Write Lambda function code'
+title: '13. Write Lambda function code'
 
 
 layout: nil

@@ -63,12 +63,11 @@ Under the "Function Code" section of the Lambda screen, you should see a dropdow
 
 ![alt text](/assets/35 - Lambda Code Upload.gif).
 
-TO BE ADDED ...
+7. Now let's test it! 
+At the top of the page you'll see a **"Test"** button. Click that and it will ask you to configure a test event. From the dropdown of the Event template, choose **"Amazon Alexa Start Session"**. Give it a name like **startSession**, scroll down and click **Create**.
 
-Test function from Lambda itself.
+![alt text](/assets/35 - createTestEvent.gif).
 
+Click the **"Test"** button and then the arrow next to **Details** in order to see the actual response. It should look something like the below image:
 
-
-
-
-
+![alt text](/assets/35 - runTestFunction.gif).
