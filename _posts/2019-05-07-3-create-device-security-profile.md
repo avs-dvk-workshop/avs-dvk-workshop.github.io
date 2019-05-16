@@ -28,8 +28,9 @@ If you're a returning developer that has already created products in your dashbo
 7. Skip the *Upload an image* step.  This is not required for prototyping.
 8. Select **No** for *Do you intend to distribute this product commercially?*
 9. Select **No** for *Will your device be used for Alexa for Business?*
-9. Select **No** for *Is this a children’s product or is it otherwise directed to children younger than 13 years old?*
-10. Click **NEXT** to continue.
+10. Select **No** for *Is this device associated with one or more AWS IoT Core Accounts?*
+11. Select **No** for *Is this a children’s product or is it otherwise directed to children younger than 13 years old?*
+12. Click **NEXT** to continue.
 
 ### Set up your security profile
 
