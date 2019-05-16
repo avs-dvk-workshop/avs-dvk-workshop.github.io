@@ -8,7 +8,7 @@ layout: nil
 
 ### Creation of the Alexa Skill
 
-In order to link Alexa to your AWS Device, we'll need to write a skill. Alexa skills let you add your own content and functionality to Alexa. Skills are a great way to engage with customers through a voice interface (VUI) and you can learn all about them on your own time at (https://developer.amazon.com/alexa-skills-kit).
+In order to accept commands and controls from Alexa, we'll need to write a skill. Alexa skills let you add your own content and functionality to Alexa. Skills are a great way to engage with customers through a voice interface (VUI) and you can learn all about them on your own time at (https://developer.amazon.com/alexa-skills-kit).
 
 For today, let's start by logging into your developer account at  [Alexa Skill Kit Developer Console]( https://developer.amazon.com/alexa/console/ask).
 
