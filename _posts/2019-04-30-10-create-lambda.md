@@ -56,13 +56,18 @@ Now select **"Invocation"** in the menu at the left side of the page and use the
 
 And with that, we've finished creation of the Alexa Skill! We will test it after we complete the Lambda function. 
 
-6. Go back to your Lambda function, let's add some code to it! First, let's download a zip file that contains some starter code, download the following zip: (https://github.com/avs-dvk-workshop/avs-dvk-workshop.github.io/blob/master/assets/skill/VoiceControlWorkshop-Skill.zip?raw=true)
+6. Go back to your Lambda function, let's add some code to handle the different utterances and intents coming from our skill! 
+First, let's download a zip file that contains some starter code, download the following zip: (https://github.com/avs-dvk-workshop/avs-dvk-workshop.github.io/blob/master/assets/skill/VoiceControlWorkshop-Skill.zip?raw=true)
 
 Under the "Function Code" section of the Lambda screen, you should see a dropdown for **"Code entry type"**, click that dropdown and choose **Upload a zip file**. You'll then click the **"Upload"** button and choose the *VoiceControlWorkshop-Skill.zip* file you just downloaded. Click **"Save"** in the upper-right corner of the screen and you should see your function populated!
 
-![alt text](/assets/35 - Lambda Code Upload.gif). 
+![alt text](/assets/35 - Lambda Code Upload.gif).
 
-Let's first create the IoT device before writing the code for the Lambda function as we will need some data from it.
+TO BE ADDED ...
+
+Test function from Lambda itself.
+
+
 
 
 
