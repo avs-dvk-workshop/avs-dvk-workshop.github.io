@@ -1,5 +1,5 @@
 ---
-title: '9. Create your Custom Skill'
+title: '8. Create your Custom Skill'
 
 
 layout: nil
