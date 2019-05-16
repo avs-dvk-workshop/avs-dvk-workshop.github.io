@@ -36,6 +36,10 @@
                         }
                     ],
                     "samples": [
+                        "switch the {color} light {state}",
+                        "change the {color} light to {state}",
+                        "turn the {color} light {state}",
+                        "turn {state} the {color} light",
                         "change the {color} to {state}",
                         "turn the {color} led {state}",
                         "switch the {color} led {state}",
