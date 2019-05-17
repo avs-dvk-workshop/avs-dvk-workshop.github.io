@@ -1,5 +1,5 @@
 ---
-title: '13. Setup your Pi for AWS IoT'
+title: '13. Set up the Breadboard for AWS IoT'
 
 
 layout: nil
