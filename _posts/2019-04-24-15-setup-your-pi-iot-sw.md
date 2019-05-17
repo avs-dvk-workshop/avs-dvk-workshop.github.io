@@ -45,10 +45,10 @@ var LED_state;
 Next, we need to set the configuration of the device:
 ```javascript
 var device = awsIot.device({
-   keyPath: "c19982ea7e-private.pem.key",
-  certPath: "c19982ea7e-certificate.pem.crt",
+   keyPath: "abcdefghij-private.pem.key",
+  certPath: "abcdefghij-certificate.pem.crt",
     caPath: "root-ca.pem.crt",
-      host: "a3q6g7uqcbysvk.iot.us-east-1.amazonaws.com"
+      host: "abcdefghijklmn.iot.us-east-1.amazonaws.com"
 });
 ```
 Here we mention paths and filenames of the private key, certificate and root certificate files. **_Please make sure you type the name of your files_**. The host is the same URL address of the IoT Thing that we used for creating the Lambda function. **_Also make sure that you specify your host URL_**.
@@ -176,10 +176,10 @@ update_topic = "$aws/things/Raspberry_Pi_LED_Thing/shadow/update";
 var LED_color;
 var LED_state;
 var device = awsIot.device({
-    keyPath: "c19982ea7e-private.pem.key",
-    certPath: "c19982ea7e-certificate.pem.crt",
+    keyPath: "abcdefghij-private.pem.key",
+    certPath: "abcdefghij-certificate.pem.crt",
     caPath: "root-ca.pem.crt",
-    host: "a3q6g7uqcbysvk.iot.us-east-1.amazonaws.com"
+    host: "abcdefghijklmn.iot.us-east-1.amazonaws.com"
 });
 device.on('connect', function () {
     console.log('Connected');
