@@ -10,15 +10,11 @@ By default, most AWS services can only access themselves, primarily for security
 
 Now expand the **"Services"** in the top left corner and select **IAM** there:
 
-![alt text](/assets/21 - Expanding Amazon services.png)  
+![alt text](/assets/21 - Expanding Amazon services.png)
+  
 In the page that comes up, select **"Roles"** on the left part of the page:
 
 ![alt text](/assets/22 - Selecting Roles.png)    
-Now expand the **"Services"** in the top left corner and select **IAM** there:
-
-![alt text](/assets/21 - Expanding Amazon services.png)  
-In the page that comes up, select **"Roles"** on the left part of the page:
-![alt text](/assets/22 - Selecting Roles.png)  
 
 On the search box halfway down the screen, start typing in the name of your Lambda function (e.g. *"Rasp"*) and your role should appear
 
