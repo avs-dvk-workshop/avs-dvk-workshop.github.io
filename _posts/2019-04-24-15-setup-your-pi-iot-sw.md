@@ -47,7 +47,7 @@ Next, we need to set the configuration of the device:
 var device = awsIot.device({
    keyPath: "c19982ea7e-private.pem.key",
   certPath: "c19982ea7e-certificate.pem.crt",
-    caPath: "root-ca.crt",
+    caPath: "root-ca.pem.crt",
       host: "a3q6g7uqcbysvk.iot.us-east-1.amazonaws.com"
 });
 ```
@@ -178,7 +178,7 @@ var LED_state;
 var device = awsIot.device({
     keyPath: "c19982ea7e-private.pem.key",
     certPath: "c19982ea7e-certificate.pem.crt",
-    caPath: "root-ca.crt",
+    caPath: "root-ca.pem.crt",
     host: "a3q6g7uqcbysvk.iot.us-east-1.amazonaws.com"
 });
 device.on('connect', function () {
