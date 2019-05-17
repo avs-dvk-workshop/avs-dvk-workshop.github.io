@@ -7,14 +7,16 @@ layout: nil
 
 ### Creation of the Lambda function
 
-Lambda function is the special service of Amazon which is stored on the server and is invoked when some event occurs. Our goal is to invoke our Lambda function when we call previously created Alexa Skill and make it do some useful thing, like update the state of our Raspberry Pi.
+Lambda function are computing on demand which is stored on the server and is invoked when some event occurs. Our goal is to invoke our Lambda function when we call previously created Alexa Skill and make it do some useful thing, like give a voice response and eventually update the state of our Raspberry Pi.
 
-1.	First, register at the Amazon AWS console, it can take some time and requires entering your financial information, so be ready for this.  Once you've registered, come back and use [this link](https://console.aws.amazon.com/lambda) again. 
+1.	First, if you haven't already, register at the Amazon AWS console, it can take some time and requires entering your financial information, so be ready for this.  Once you've registered, come back and use [this link](https://console.aws.amazon.com/lambda) again. 
 
 2.	When you open the title page, make sure to select **US East (N.Virginia)** in the drop-down list in the upper right hand corner. Some other regions have restrictions and your Lambda function won't work correctly:
 ![alt text](/assets/18 - Selecting region for Lambda function.png)  3.	Now, click on the orange button **"Create Function"** and proceed to the next page:
 ![alt text](/assets/19 - Creating new lambda function.png) 
-Select **"Author from scratch"** option, as we will create our own function. Type the name of the function, I selected *"RaspberryPi_LED_Control"* but you can choose your own. Leave the Runtime as **"Node.js 10.x"** ' we will write our function in this language. Then scroll down to the Role field and select **"Create a custom role"**. When you do this, you will be redirected to the following page:
+Select **"Author from scratch"** option, as we will create our own function. Type the name of the function, I selected *"RaspberryPi_LED_Control"* but you can choose your own. Leave the Runtime as **"Node.js 10.x"** ' we will write our function in this language. 
+
+Then scroll down to the Role field and select **"Create a custom role"**. When you do this, you will be redirected to the following page:
 ![alt text](/assets/20 - Creating custom role.png)  
 Now expand the **"Services"** in the top left corner and select **IAM** there:
 ![alt text](/assets/21 - Expanding Amazon services.png)  
