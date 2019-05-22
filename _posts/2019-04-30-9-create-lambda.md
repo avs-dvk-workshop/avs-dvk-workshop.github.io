@@ -42,7 +42,7 @@ First, let's download a zip file that contains some starter code, download the f
 Under the "Function Code" section of the Lambda screen, you should see a dropdown for **"Code entry type"**, click that dropdown and choose **Upload a zip file**. You'll then click the **"Upload"** button and choose the *VoiceControlWorkshop-Skill.zip* file you just downloaded. Click **"Save"** in the upper-right corner of the screen and you should see your function populated!
 ![alt text](/assets/35 - Lambda Code Upload.gif).
 
-6. Scroll down on the page until you see the **"Basic Settings"** section on the right side and update the timeout from **"3"** to **"8"** seconds. 
+6. Scroll down on the page until you see the **"Basic Settings"** section on the right side and update the timeout from **"3"** to **"8"** seconds. Click the orange button **"Save"** in the top right of the page.
 ![alt text](/assets/35 - Lambda Timeout Settings.png).
 
 7. Now let's test it! 

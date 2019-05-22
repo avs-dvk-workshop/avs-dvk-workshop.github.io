@@ -13,7 +13,7 @@ Refer to the pictures below for the hardware assembly.
 2. Attach the GPIO breakout board to the breadboard.
 3. Attach the ribbon cable to the GPIO breakout board.
 4. Attach the other end of the ribbon cable to the 40 pin header on the Pi.
-5. Place the red, green and blue LEDs on the breadboard.
+5. Place the red, green and blue LEDs on the breadboard. The shorter pin of the LEDs should be -5V line.
 6. Place the 220 Ohms (red-red-black-gold) LED resistors on the breadboard.
 7. Please the 3 red,greeen, and blue colored jumper wires linking the GPIO pins controlling the LEDs on the breadboard. Use the table below as a guide.
 8. Place the switch on the breadboard.
