@@ -20,7 +20,7 @@ Refer to the pictures below for the hardware assembly.
 9. Pleace the 10k Ohms (brown-black-orange-gold) pull-down resistor for the switch on the breadboard. 
 9. Place the yellow jumper wire linking the switch to the GPIO pin on the breadbord. Use the table below as a guide.
 
-![Pi_iot_complete](../assets/pi_iot_complete.jpeg)
+![Pi_sketch](../assets/sketch_dvk_workshop_bb.png)
 ![Pi_iot_board_1](../assets/pi_iot_board_1.jpg) ![Pi_iot_board_2](../assets/pi_iot_board_2.jpg)
 
 ## Breadboard connection table
