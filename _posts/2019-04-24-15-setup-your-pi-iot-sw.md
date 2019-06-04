@@ -153,7 +153,7 @@ If there are no errors you will see the following:
 ![alt text](/assets/64 - RPi application launch.png)   
 We have successfully connected to the AWS IoT Thing and updated the states of the Thing Shadow.
 Now open the second terminal window and switch to the folder where Alexa is located. And launch it with the command 
-`sudo bash startsample.sh`
+`bash /home/pi/avs_run.sh`
 
 Now you have the Alexa client running on your Raspberry Pi. Try to say *"Alexa, ask my raspberry to turn the red led on"*. The red led should light up, and the corresponding message should appear in the terminal which runs **IoT_thing.js** file. Now try to ask *"Alexa, ask my raspberry about the pin state"* and hear the response, then change the switch state and ask again. You will see that the response differs.
 ![alt text](/assets/65 - RPI Alexa and application launch.png)   
