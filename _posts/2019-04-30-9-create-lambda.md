@@ -14,7 +14,7 @@ Lambda function are computing on demand which is stored on the server and is inv
 2.	When you open the title page, make sure to select **US East (N.Virginia)** in the drop-down list in the upper right hand corner. Some other regions have restrictions and your Lambda function won't work correctly:
 ![alt text](/assets/18 - Selecting region for Lambda function.png)  3.	Now, click on the orange button **"Create Function"** and proceed to the next page:
 ![alt text](/assets/19 - Creating new lambda function.png) 
-Select **"Author from scratch"** option, as we will create our own function. Type the name of the function, I selected *"RaspberryPi_LED_Control"* but you can choose your own. Leave the Runtime as **"Node.js 10.x"** ' we will write our function in this language. Click on the orange button **"Create function"**.
+Select **"Author from scratch"** option, as we will create our own function. Type the name of the function, I selected *"RaspberryPi_LED_Control"* but you can choose your own. Leave the Runtime as **"Node.js 10.x"** ' we will write our function in this language. Click on the orange button **"Create function"**. (Note that if it the *"Execution role"* dropdown appears, you want to have the *"Create a new role with basic Lambda permissions"* selected)
 
 3.	Now let's setup our function. First, since Lambda functions are run "on-demand", they need a *"trigger"* to invoke the function execution. As it will be called by an Alexa Skill, let's select *"Alexa Skill Kit"* in the **"Add trigger"** list in the left part of the page:
 ![alt text](/assets/27 - Lambda function setup.png)    
