@@ -26,9 +26,9 @@ Copy it and return to the Alexa Skill page. Find **"Endpoint"** in the menu on t
 ![alt text](/assets/30 - Lambda function ARN.png) 
 Select *"AWS Lambda ARN"* and paste the Lambda function ARN into the field **"Default region"**. Also copy the **"Your Skill ID"** value as you'll need it in the Lambda page. 
 ![alt text](/assets/31 - Alexa Skill endpoint.png) 
-![alt text](/assets/33 - Inserting skill ID to the lambda function.png)   
-Return to the Lambda function page and paste *Skill ID* in the appropriate field:
 ![alt text](/assets/32 - Copying skill ID.png)    
+Return to the Lambda function page and paste *Skill ID* in the appropriate field:
+![alt text](/assets/33 - Inserting skill ID to the lambda function.png)   
 Then click **Add**. Then scroll to the top of the page and click orange button **"Save"** in the top right of the page. 
 
 4.	Let's now finish configuration of our Skill. Return to the Alexa Skill page, scroll to the top of the page and click **"Save Endpoints"**. If there are no mistakes, the corresponding message will appear:
