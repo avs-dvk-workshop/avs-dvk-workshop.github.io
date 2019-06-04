@@ -3,8 +3,9 @@
 # This script is run once, to set up all that is necessary on top of a base Raspbian image, and to precompile the AVS sdk
 #
 # create directories
-cd /home/pi/
+cd /home/pi
 mkdir sdk-folder
+mkdir iot
 
 cd sdk-folder
 mkdir sdk-build sdk-source third-party application-necessities
@@ -22,7 +23,9 @@ libsoup2.4-dev libgcrypt20-dev libgstreamer-plugins-bad1.0-dev \
 gstreamer1.0-plugins-good libasound2-dev doxygen libssl-dev
 
 #install dependencies for AWS IoT
-sudo apt-get -y install node npm
+sudo apt-get -y install nodejs npm
+cd /home/pi/iot
+wget https://avs-dvk-workshop.github.io/setup_files/root-ca.pem.crt
 npm install aws-iot-device-sdk
 npm install onoff
 

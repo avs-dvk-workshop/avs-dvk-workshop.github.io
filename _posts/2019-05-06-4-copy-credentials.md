@@ -14,10 +14,6 @@ If you don't see your dashboard, click on "My Alexa Consoles" in the upper right
 
 This will take you to a product menu - on the left side you should see Product Details.  Select Security Profile below that and choose **Other devices and platforms** from the *Web - Android/Kindle - iOS - Other devices and platforms* menu.
 
-When you click the **Download** button on your Security Profile in your web browser, you'll see a **config.json** file appear in your home/pi/downloads folder.  In the file manager, copy this file from the /downloads folder and place it in your home/pi folder as shown in the picture below.
-
-
-![config](../assets/downloadConfig_large.png)
-
+When you click the **Download** button on your Security Profile in your web browser, a file called **config.json** file will be placed in your /home/pi/Downloads folder. This file will be used in a later step to configure the Pi as an AVS device associated with your product.
 
 Now that your Raspberry Pi has your own **unique credentials** loaded on it, it's time to build your SDK.

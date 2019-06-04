@@ -13,14 +13,14 @@ Refer to the pictures below for the hardware assembly.
 2. Attach the GPIO breakout board to the breadboard.
 3. Attach the ribbon cable to the GPIO breakout board.
 4. Attach the other end of the ribbon cable to the 40 pin header on the Pi.
-5. Place the red, green and blue LEDs on the breadboard.
+5. Place the red, green and blue LEDs on the breadboard. The shorter pin of the LEDs should be -5V line.
 6. Place the 220 Ohms (red-red-black-gold) LED resistors on the breadboard.
 7. Please the 3 red,greeen, and blue colored jumper wires linking the GPIO pins controlling the LEDs on the breadboard. Use the table below as a guide.
 8. Place the switch on the breadboard.
 9. Pleace the 10k Ohms (brown-black-orange-gold) pull-down resistor for the switch on the breadboard. 
 9. Place the yellow jumper wire linking the switch to the GPIO pin on the breadbord. Use the table below as a guide.
 
-![Pi_iot_complete](../assets/pi_iot_complete.jpeg)
+![Pi_sketch](../assets/sketch_dvk_workshop_bb.png)
 ![Pi_iot_board_1](../assets/pi_iot_board_1.jpg) ![Pi_iot_board_2](../assets/pi_iot_board_2.jpg)
 
 ## Breadboard connection table
