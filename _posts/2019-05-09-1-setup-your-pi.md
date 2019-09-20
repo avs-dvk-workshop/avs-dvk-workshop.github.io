@@ -8,23 +8,23 @@ layout: nil
 
 ### Equipment needed
 
-1. Raspberry pi 3 with power supply
-2. 16GB+ micro SD Card with raspbian Stretch installed
-3. Raspberry Pi compatible GPIO breakout board and cable
-4. Breadboard
-5. 3x LEDs: Red, White and Blue
-6. 1x push button switch
-7. 3x 220 ohm resistors
-8. 1x 10k ohm resistor
-9. Colored Jumper cables
+- Raspberry pi 3 with power supply
+- 16GB+ micro SD Card with raspbian Stretch installed
+- Raspberry Pi compatible GPIO breakout board and cable
+- Breadboard
+- 3x LEDs: Red, White and Blue
+- 1x push button switch
+- 3x 220 ohm resistors
+- 1x 10k ohm resistor
+- Colored Jumper cables
 
 This contains all of the above: [https://www.amazon.com/CanaKit-Raspberry-Ultimate-Starter-Clear/dp/B07BC567TW](https://www.amazon.com/CanaKit-Raspberry-Ultimate-Starter-Clear/dp/B07BC567TW)
 
-10. USB Microphone
-11. 3.5mm jack headphones
-12. USB Keyboard
-13. USB Mouse
-14. Monitor and Cable that accepts HDMI input
+- USB Microphone
+- 3.5mm jack headphones
+- USB Keyboard
+- USB Mouse
+- Monitor and Cable that accepts HDMI input
 
 
 Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
