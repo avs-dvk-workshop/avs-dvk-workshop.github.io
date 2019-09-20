@@ -34,7 +34,7 @@ bash avs_install.sh
 
 Type **"AGREE"** when it prompts you to accept the licensing terms from our third-party libraries.  Unless, of course, you disagree!
 
-This will kick off the installation process which could normally take over 20 minutes, but for reMARS we've precompiled the image to save you some time.
+This will kick off the installation process which could normally take over 20 minutes.
 
 Once the installation is finished, you should see a return to the shell prompt and no abvious compilation errors.  If your device freezes up - don't worry, just restart by unplugging your Pi's power cord.  When you get back to your desktop, re-run the above `avs_install.sh` command to finish your install. If you need to recompile the sdk at some point post-workshop due to an update or manual modification, you should close any other processes like browsers on the pi as memory consumption during the compilation process is high.
 

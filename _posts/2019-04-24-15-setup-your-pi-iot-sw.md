@@ -5,7 +5,7 @@ title: '15. Setup the AWS IoT software on your Pi'
 layout: nil
 ---
 
-The Raspbian OS Image for the workshop has the following required software packages pre-installed:
+The setup script executed at step 1 installed the following required software packages that are specifically required for this step:
 
 * node: We are using Node.js for our code. This package is required to execute node programs.
 
