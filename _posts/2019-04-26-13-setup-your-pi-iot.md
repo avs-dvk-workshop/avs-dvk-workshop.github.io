@@ -5,18 +5,6 @@ title: '13. Set up the Breadboard for AWS IoT'
 layout: nil
 ---
 
-###     Parts you will need
-
-1. Raspberry Pi compatible GPIO breakout board and cable
-2. Breadboard
-3. 3x LEDs: Red, White and Blue
-4. 1x push button switch
-5. 3x 220 ohm resistors
-6. 1x 10k ohm resistor
-7. Colored Jumper cables
-
-This contains all of the above: [https://www.amazon.com/CanaKit-Raspberry-Breakout-Board-Bundle/dp/B076KZY5P6](https://www.amazon.com/CanaKit-Raspberry-Breakout-Board-Bundle/dp/B076KZY5P6)
-
 ###	Hardware assembly
 
 Refer to the pictures below for the hardware assembly.

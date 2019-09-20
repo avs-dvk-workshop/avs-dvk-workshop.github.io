@@ -1,16 +1,26 @@
 ---
-title: '5. Run the Install Script'
+title: '5. Run the Setup and Install Scripts'
 
 
 layout: nil
 ---
+
+### Run the Setup script
+
+You are now ready to run the setup script. This will install the required software and dependencies on your Pi. To run the setup script, open a **terminal** by clicking on the console window in the Pi's toolbar in the upper-left corner of the screen (or just use your existing terminal window).
+
+```
+cd /home/pi
+curl https://raw.githubusercontent.com/avs-dvk-workshop/avs-dvk-workshop.github.io/master/setup_files/avs_pre_setup.sh -o avs_pre_setup.sh
+bash avs_pre_setup.sh
+```
 
 
 ### Run the Install Script
 
 You are now ready to run the install script. This will install all dependencies, including the **Wake Word Engine** (WWE) from Sensory.  The WWE compares incoming audio to an onboard model of a wake word (**"Alexa"**) and will initiate the transmission of audio to the cloud when triggered.  Note that this WWE is provided for **prototyping purposes only** and would need to be licensed for a commercial device.  The AVS Device SDK is modular and flexible. When you're ready to build your product, you can choose any WWE you prefer. Remember that for AVS products, the wake word must be **Alexa** so that your customers aren't confused about how to interact with your device.
 
-To run the install script, open a **terminal** by clicking on the console window in the Pi's toolbar in the upper-left corner of the screen (or just use your existing terminal window). You should see a **avs_install.sh** script in your */home/pi/* directory. This pulls the credentials from your **config.json** file to run the install script. To launch the setup script, copy and paste the following command into your terminal window and hit return:
+To run the install script, open a **terminal** by clicking on the console window in the Pi's toolbar in the upper-left corner of the screen (or just use your existing terminal window). You should see a **avs_install.sh** script in your */home/pi/* directory. This pulls the credentials from your **config.json** file to run the install script. To launch the install script, copy and paste the following commands into your terminal window and hit return:
 
 
 ```
