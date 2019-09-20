@@ -26,15 +26,6 @@ This contains all of the above: [https://www.amazon.com/CanaKit-Raspberry-Ultima
 - USB Mouse
 - Monitor and Cable that accepts HDMI input
 
-
-Let's begin by setting up the Pi. The Raspberry Pi 3 board includes -
-
-- 4 USB ports
-- HDMI port for video output (you'll be using this to connect to your HDMI monitor)
-- 3.5mm audio jack for sound output (you'll be using to connect your earphones)
-- Micro SD card slot
-- Ethernet port
-
 {:.steps}
 ### Assembling Your Pi
 
