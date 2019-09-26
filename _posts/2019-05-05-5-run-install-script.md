@@ -11,7 +11,7 @@ You are now ready to run the setup script. This will install the required softwa
 
 ```
 cd /home/pi
-curl https://raw.githubusercontent.com/avs-dvk-workshop/avs-dvk-workshop.github.io/master/setup_files/avs_pre_setup.sh -o avs_pre_setup.sh
+wget https://avs-dvk-workshop.github.io/setup_files/avs_pre_setup.sh
 bash avs_pre_setup.sh
 ```
 

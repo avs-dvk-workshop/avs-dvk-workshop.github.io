@@ -46,3 +46,9 @@ pip install commentjson
 #grab sdk
 cd /home/pi/sdk-folder/sdk-source
 git clone --single-branch git://github.com/alexa/avs-device-sdk.git
+
+#grab install and run scripts
+cd /home/pi
+wget https://avs-dvk-workshop.github.io/setup_files/avs_install.sh
+wget https://avs-dvk-workshop.github.io/setup_files/avs_run.sh
+chmod u+x avs_install.sh avs_run.sh
