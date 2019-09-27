@@ -13,6 +13,7 @@ configure_sound() {
     type asym
      playback.pcm {
        type plug
+       format S16_LE
        slave.pcm "hw:0,0"
      }
      capture.pcm {

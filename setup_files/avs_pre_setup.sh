@@ -2,6 +2,13 @@
 #
 # This script is run once, to set up all that is necessary on top of a base Raspbian image, and to precompile the AVS sdk
 #
+# For some microphones, gain should be maxed out with "alsamixer"
+#
+# IMPORTANT for Raspbian Stretch
+# ------------------------------
+# Add "audio_pwm_mode=1" in "/boot/config.txt" (after "dtparam=audio=on" line)
+# 
+
 # create directories
 cd /home/pi
 mkdir sdk-folder
@@ -36,7 +43,7 @@ wget -c http://www.portaudio.com/archives/pa_stable_v190600_20161030.tgz
 tar zxf pa_stable_v190600_20161030.tgz
 
 cd portaudio
-./configure --without-jack
+./configure --without-jack --without-oss
 
 make
 

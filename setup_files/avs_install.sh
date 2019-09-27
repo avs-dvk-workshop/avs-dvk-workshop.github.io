@@ -35,12 +35,17 @@ bash genConfig.sh config.json 123456 \
 /home/pi/sdk-folder/sdk-source/avs-device-sdk \
 /home/pi/sdk-folder/sdk-build/Integration/AlexaClientSDKConfig.json.generated
 
-#Change gstreamer device to "alsasink"
 #Create configuration file with audioSink configuration at the beginning of the file
+#Needed to fix playback for Audible
 cat << EOF > /home/pi/sdk-folder/sdk-build/Integration/AlexaClientSDKConfig.json
  {
     "gstreamerMediaPlayer":{
-         "audioSink": "alsasink"
+        "outputConversion":{
+            "rate":48000,
+            "format":"S16LE",
+            "channels":2
+        },
+         "audioSink": "autoaudiosink"
     },
 EOF
 
